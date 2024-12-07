@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honda CBR1000rr Fireblade</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Custom Colors */
+:root {
+    --color-primary: #0F1E7D; /* Deep Blue */
+    --color-secondary: #A6231E; /* Crimson Red */
+    --color-tertiary: #3B2627; /* Dark Taupe */
+    --color-accent: #5B5A5A; /* Gray */
+    --color-background: #F2F2F1; /* Light Gray */
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-tertiary);
+    font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--color-primary);
+}
+
+.hero-video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-background);
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.highlight-text {
+    color: var(--color-secondary);
+}
+
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.5rem;
+    color: var(--color-background);
+    background: rgba(15, 30, 125, 0.8);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* Section Title */
+.section-title {
+    color: var(--color-secondary);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 40px;
+    border-bottom: 3px solid var(--color-primary);
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+/* Content Section */
+.section-content {
+    padding: 40px;
+    color: var(--color-tertiary);
+}
+
+.section-content p,
+li {
+    font-size: 1.2rem;
+}
+
+.image-container {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.rounded-lg {
+    width: 350px;
+}
+
+/* HR Styling */
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(
+        to right,
+        var(--color-secondary),
+        var(--color-primary),
+        var(--color-secondary)
+    );
+    animation: hr-glow 2s infinite alternate;
+    margin: 30px 0;
+}
+
+@keyframes hr-glow {
+    0% {
+        box-shadow: 0 0 5px var(--color-primary);
+    }
+    100% {
+        box-shadow: 0 0 20px var(--color-secondary);
+    }
+}
+
+/* Audio Button */
+.audio-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-secondary);
+    color: var(--color-background);
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* Slider Navigation */
+button {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--color-background);
+    background-color: var(--color-primary);
+    border: none;
+}
+
+button:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-background);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button i {
+    font-size: 1.5rem;
+}
+
+        /* Custom CSS for Slider */
+    .slider-wrapper {
+        position: relative;
+        width: 100%;
+    }
+
+    .slider-container {
+        display: flex;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .slider-item {
+        flex-shrink: 0;
+        width: 100%;
+    }
+
+    button {
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    /* Navigation arrows style */
+    button:hover {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    button i {
+        font-size: 1.5rem;
+    }
+
+
+    /* Footer */
+.footer {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    text-align: center;
+    padding: 20px;
+}
+
+        /* Media Queries for Mobile */
+        @media (max-width: 768px) {
+            .hero-text {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .section-content {
+                padding: 20px;
+            }
+
+            .image-container {
+                max-width: 100%;
+            }
+
+            .gallery-images {
+                flex-wrap: wrap;
+            }
+
+            .gallery-images img {
+                width: 48%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <video class="hero-video" autoplay muted loop>
+            <source src="honda/honda.mp4" type="video/mp4">
+        </video>
+        <div class="hero-text" data-aos="fade-up">
+            <h1>CBR<span class="highlight-text">1000</span>rr <span class="highlight-text">FireBlade</span><br>- A Legend Reimagined</h1>
+        </div>
+        <a href="home.html" class="back-btn"><i class="fas fa-backward"></i></a>
+    </div>
+
+    <!-- Content Section -->
+    <div class="section-content">
+        <div data-aos="fade-up">
+            <h2 class="section-title">Honda CBR1000RR-R Fireblade: Precision Perfected</h2>
+            <p>
+                "Built for victory, born for speed: The Honda CBR1000RR-R Fireblade—a legend redefined for the ultimate ride."
+            </p>
+            <div class="image-container">
+                <img src="images/cbr.webp" alt="Ducati Panigale V4 R" class="rounded-lg">
+            </div>
+            <p>The <strong>Honda CBR1000RR-R Fireblade</strong> represents the pinnacle of Honda’s engineering and racing expertise. 
+                A flagship model in Honda's lineup, the Fireblade is a motorcycle that seamlessly blends cutting-edge technology, 
+                breathtaking performance, and rider-friendly dynamics. Its MotoGP-inspired design and features ensure it remains 
+                a dominant force on both the road and track.</p>
+            
+            <hr>
+
+            <h3 class="section-title">Engine & Performance</h3>
+            <ul>
+                <li><strong>MotoGP-Derived Engine:</strong> Powered by a <strong>999cc inline-four engine</strong>, the Fireblade delivers an exhilarating <strong>214 horsepower</strong> and 113 Nm of torque, ensuring class-leading acceleration and top-end performance.</li>
+                <li><strong>High-Revolution Capability:</strong> Designed for high-rpm performance, it offers a thrilling riding experience with a smooth yet ferocious power delivery.</li>
+                <li><strong>Top Speed:</strong> The Fireblade easily exceeds <strong>300 km/h (186 mph)</strong>, making it a track-ready powerhouse.</li>
+            </ul>
+
+            <hr>
+
+            <h3 class="section-title">Design & Aerodynamics</h3>
+            <ul>
+                <li><strong>Aggressive Styling:</strong> The CBR1000RR-R features a sleek, aerodynamic design inspired by Honda's RC213V MotoGP bike, with sharp lines and an intimidating presence.</li>
+                <li><strong>Aerodynamic Winglets:</strong> Integrated into the front fairing, these winglets generate significant downforce for improved stability during high-speed runs.</li>
+                <li><strong>Lightweight Construction:</strong> Using lightweight materials like aluminum and magnesium, the Fireblade achieves an exceptional power-to-weight ratio.</li>
+            </ul>
+
+            <hr>
+
+            <h3 class="section-title">Technology & Features</h3>
+            <ul>
+                <li><strong>Honda Selectable Torque Control (HSTC):</strong> Advanced traction control ensures optimal grip and confidence in all conditions.</li>
+                <li><strong>Riding Modes:</strong> Three preset riding modes (Track, Sport, and Rain) with customizable settings allow riders to tailor the bike’s performance.</li>
+                <li><strong>TFT Display:</strong> A 5-inch full-color TFT display provides vital information, riding modes, and telemetry in a user-friendly layout.</li>
+                <li><strong>Quick Shifter:</strong> The bi-directional quick shifter allows seamless gear changes, enhancing track and road performance.</li>
+            </ul>
+        
+            <hr>
+
+            <h3 class="section-title">Handling & Suspension</h3>
+            <ul>
+                <li><strong>Frame and Swingarm:</strong> A redesigned aluminum frame and swingarm ensure exceptional rigidity and precise handling.</li>
+                <li><strong>Suspension:</strong> Öhlins Smart EC 2.0 semi-active suspension adapts dynamically to the road or track, offering unmatched comfort and performance.</li>
+                <li><strong>Braking System:</strong> Brembo Stylema calipers and dual 330mm discs provide incredible stopping power, even under extreme conditions.</li>
+            </ul>
+        
+            <hr>
+
+            <h3 class="section-title">Exclusivity</h3>
+            <ul>
+                <li><strong>Racing Pedigree:</strong> Inspired by Honda's dominance in MotoGP, the Fireblade is a testament to decades of racing success and technological innovation.</li>
+                <li><strong>Refined Craftsmanship:</strong> Every detail, from its design to its engineering, reflects Honda’s unwavering commitment to quality and precision.</li>
+            </ul>
+        
+            <hr>
+
+            <h3 class="section-title">Key Specifications</h3>
+            <ul>
+                <li><strong>Engine:</strong> 999cc inline-four</li>
+                <li><strong>Power:</strong> 214 hp</li>
+                <li><strong>Torque:</strong> 113 Nm</li>
+                <li><strong>Weight:</strong> 201 kg (wet)</li>
+                <li><strong>Top Speed:</strong> Over 300 km/h</li>
+            </ul>
+        
+            <hr>
+
+            <h3 class="section-title">Price</h3>
+            <p>
+                The Honda CBR1000RR-R Fireblade is priced at approximately <strong>$28,500 USD</strong>, offering world-class performance and advanced technology at a competitive price point.
+            </p>
+        
+            <hr>
+
+            <h3 class="section-title">Conclusion</h3>
+            <p>
+                The Honda CBR1000RR-R Fireblade is a superbike that redefines precision and performance. Its MotoGP-derived engineering, innovative technology, 
+                and track-ready capabilities make it a standout choice for riders who demand the very best. Whether you're chasing lap records or enjoying an exhilarating road ride, 
+                the Fireblade delivers a perfect balance of power, agility, and sophistication.
+            </p>
+        </div>
+    </div>
+
+    <!-- Engine Sound Section -->
+    <div class="section-content" data-aos="fade-up">
+        <h2 class="section-title">Exhaust Sound</h2>
+        <div class="image-container relative">
+            <img src="images/cbr-exhaust.jpg" alt="H2R Exhaust" class="rounded-lg">
+            <button id="audio-btn" class="audio-btn">Start Engine</button>
+        </div>        
+        <audio id="engine-sound" src="audios/cbr-exhaust.mp3" preload="auto"></audio>
+    </div>
+
+    <!-- Gallery Section -->
+<div class="section-content" data-aos="fade-up">
+    <h2 class="section-title">Gallery</h2>
+    <div class="relative w-full md:w-1/2 mx-auto">
+        <!-- Slider Images -->
+        <div class="slider-wrapper relative overflow-hidden">
+            <div class="slider-container flex transition-all duration-300 ease-in-out">
+                <div class="slider-item w-full">
+                    <img src="honda/cbr-side.jpg" alt="Side View" class="w-full">
+                </div>
+                <div class="slider-item w-full">
+                    <img src="honda/cbr-front.jpg" alt="Front View" class="w-full">
+                </div>
+                <div class="slider-item w-full">
+                    <img src="honda/cbr-back.jpg" alt="Back View" class="w-full">
+                </div>
+                <div class="slider-item w-full">
+                    <img src="honda/cbr-meter.jpg" alt="Meter View" class="w-full">
+                </div>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <button class="absolute left-0 top-1/2 transform -translate-y-1/2 text-white bg-black bg-opacity-50 px-4 py-2 rounded-full" id="prev-btn">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="absolute right-0 top-1/2 transform -translate-y-1/2 text-white bg-black bg-opacity-50 px-4 py-2 rounded-full" id="next-btn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>&copy; 2024 Honda CBR1000rr Fireblade. All Rights Reserved.</p>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        // Audio control logic
+        const audioBtn = document.getElementById('audio-btn');
+        const engineSound = document.getElementById('engine-sound');
+
+        audioBtn.addEventListener('click', () => {
+            if (engineSound.paused) {
+                engineSound.play();
+                audioBtn.textContent = 'Stop Engine';
+            } else {
+                engineSound.pause();
+                audioBtn.textContent = 'Start Engine';
+            }
+        });
+    </script>
+    <script>
+        let currentIndex = 0;
+        const sliderItems = document.querySelectorAll('.slider-item');
+        const totalItems = sliderItems.length;
+        const sliderContainer = document.querySelector('.slider-container');
+    
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+    
+        // Function to update the slider position
+        const updateSlider = () => {
+            const newTransformValue = -currentIndex * 100; // Move slider items by 100% width
+            sliderContainer.style.transform = `translateX(${newTransformValue}%)`;
+        };
+    
+        // Handle next button click
+        nextBtn.addEventListener('click', () => {
+            if (currentIndex < totalItems - 1) {
+                currentIndex++;
+            } else {
+                currentIndex = 0; // Loop back to the first image
+            }
+            updateSlider();
+        });
+    
+        // Handle previous button click
+        prevBtn.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+            } else {
+                currentIndex = totalItems - 1; // Loop back to the last image
+            }
+            updateSlider();
+        });
+    </script>
+    
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bike Reviews</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="review.css">
+  <script src="review.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJ6v2c7aOe3tS3t2X5ykU8GdkuG1zS+8btj3A3l0ZQbiHOBiEd4czNUZb7qz" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-p1HP1diNViRO9CxlN3yzJRxKHf7YrkIvSXxeX4J4k8x4hTfYHK+ZC4AS10+dck28HfaVYtZy6izTBz6LrKTMJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="hero" class="d-flex flex-column justify-content-center align-items-center text-white text-center" data-aos="fade-up" data-aos-duration="1200">
+      <a href="home.html" class="top-left-link" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">
+        <i class="fas fa-backward"></i>
+      </a>
+      <div class="overlay"></div>
+      <h1 class="mb-3" data-aos="fade-down" data-aos-duration="1000">Head-to-Head: The Ultimate Sports Bike Reviews</h1>
+      <p class="mb-4" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">Choose your ride wisely—every curve deserves the perfect machine.</p>
+    </section>
+
+    <div class="container">
+      <h1 class="text-center mt-5 mb-4">Elite Five Reviews</h1>
+
+      <!-- Review Section for H2R -->
+      <div class="bike-review-section" id="h2r-review" data-aos="zoom-in" data-aos-duration="1200">
+        <h3 data-aos="fade-up">H2R - Kawasaki</h3>
+        <img src="images/h2r.jpg" alt="H2R" class="bike-img mb-3" data-aos="fade-left">
+        
+        <!-- Review Form -->
+        <form id="h2r-review-form">
+          <div class="mb-3">
+            <label for="h2r-rating" class="form-label">Rating <i class="fa-solid fa-star"></i> :</label>
+            <input type="number" id="h2r-rating" class="form-control" min="1" max="5" required>
+          </div>
+          <div class="mb-3">
+            <label for="h2r-comment" class="form-label">Leave <i class="fa-solid fa-comment"></i> :</label>
+            <textarea id="h2r-comment" class="form-control" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit Review</button>
+        </form>
+
+        <!-- Display Reviews -->
+        <div class="review-list" id="h2r-reviews"></div>
+      </div>
+
+      <!-- Review Section for Panigale -->
+      <div class="bike-review-section" id="panigale-review" data-aos="zoom-in" data-aos-duration="1200">
+        <h3 data-aos="fade-up">Panigale V4R - Ducati</h3>
+        <img src="images/v4r.avif" alt="Panigale" class="bike-img mb-3" data-aos="fade-left">
+        
+        <!-- Review Form -->
+        <form id="panigale-review-form">
+          <div class="mb-3">
+            <label for="panigale-rating" class="form-label">Rating <i class="fa-solid fa-star"></i> :</label>
+            <input type="number" id="panigale-rating" class="form-control" min="1" max="5" required>
+          </div>
+          <div class="mb-3">
+            <label for="panigale-comment" class="form-label">Leave <i class="fa-solid fa-comment"></i> :</label>
+            <textarea id="panigale-comment" class="form-control" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit Review</button>
+        </form>
+
+        <!-- Display Reviews -->
+        <div class="review-list" id="panigale-reviews"></div>
+      </div>
+
+      <!-- Review Section for S1000RR -->
+      <div class="bike-review-section" id="s1000rr-review" data-aos="zoom-in" data-aos-duration="1200">
+        <h3 data-aos="fade-up">S1000RR - BMW</h3>
+        <img src="images/s1000.jpeg" alt="S1000RR" class="bike-img mb-3" data-aos="fade-left">
+        
+        <!-- Review Form -->
+        <form id="s1000rr-review-form">
+          <div class="mb-3">
+            <label for="s1000rr-rating" class="form-label">Rating <i class="fa-solid fa-star"></i> :</label>
+            <input type="number" id="s1000rr-rating" class="form-control" min="1" max="5" required>
+          </div>
+          <div class="mb-3">
+            <label for="s1000rr-comment" class="form-label">Leave <i class="fa-solid fa-comment"></i> :</label>
+            <textarea id="s1000rr-comment" class="form-control" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit Review</button>
+        </form>
+
+        <!-- Display Reviews -->
+        <div class="review-list" id="s1000rr-reviews"></div>
+      </div>
+
+      <!-- Review Section for Aprilia RSV4 -->
+      <div class="bike-review-section" id="aprilia-review" data-aos="zoom-in" data-aos-duration="1200">
+        <h3 data-aos="fade-up">RSV4 - Aprilia</h3>
+        <img src="images/rsv4.jpg" alt="Aprilia" class="bike-img mb-3" data-aos="fade-left">
+        
+        <!-- Review Form -->
+        <form id="aprilia-review-form">
+          <div class="mb-3">
+            <label for="aprilia-rating" class="form-label">Rating <i class="fa-solid fa-star"></i> :</label>
+            <input type="number" id="aprilia-rating" class="form-control" min="1" max="5" required>
+          </div>
+          <div class="mb-3">
+            <label for="aprilia-comment" class="form-label">Leave <i class="fa-solid fa-comment"></i> :</label>
+            <textarea id="aprilia-comment" class="form-control" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit Review</button>
+        </form>
+
+        <!-- Display Reviews -->
+        <div class="review-list" id="aprilia-reviews"></div>
+      </div>
+
+      <!-- Review Section for Honda CBR -->
+      <div class="bike-review-section" id="honda-review" data-aos="zoom-in" data-aos-duration="1200">
+        <h3 data-aos="fade-up">CBR1000RR Fireblade - Honda</h3>
+        <img src="images/cbr.webp" alt="Honda CBR" class="bike-img mb-3" data-aos="fade-left">
+        
+        <!-- Review Form -->
+        <form id="honda-review-form">
+          <div class="mb-3">
+            <label for="honda-rating" class="form-label">Rating <i class="fa-solid fa-star"></i> :</label>
+            <input type="number" id="honda-rating" class="form-control" min="1" max="5" required>
+          </div>
+          <div class="mb-3">
+            <label for="honda-comment" class="form-label">Leave <i class="fa-solid fa-comment"></i> :</label>
+            <textarea id="honda-comment" class="form-control" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit Review</button>
+        </form>
+
+        <!-- Display Reviews -->
+        <div class="review-list" id="honda-reviews"></div>
+      </div>
+    </div>
+
+  <!-- Owner's Review Section for H2R -->
+  <div class="owner-review-section" id="h2r-owner-review">
+    <h4>Owner's Review - H2R</h4>
+    <p><strong>Owner:</strong> John Doe</p>
+  
+    <!-- YouTube Review Video -->
+    <div class="owner-review-video">
+      <h5><i class="fa-solid fa-star-half-stroke"></i> Review:</h5>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ZFuSEZWhTPg?si=DjUh4QaV7WyqLt5v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  
+    <!-- Owner's Statement -->
+    <div class="owner-review-statement">
+      <h5>Owner's Statement:</h5>
+      <p>
+        "The Kawasaki H2R is an absolute beast! Its power and engineering are on another level. The acceleration is mind-blowing, and the handling is incredibly precise, making it an exhilarating experience on every ride. The build quality and attention to detail are exceptional, and it certainly stands out as one of the top hyperbikes in the world."
+      </p>
+    </div>
+  </div>
+  
+  
+  <!-- Owner's Review Section for Panigale -->
+  <div class="owner-review-section" id="panigale-owner-review">
+    <h4>Owner's Review - Panigale V4R</h4>
+    
+    <!-- Owner's Name -->
+    <p><strong>Owner:</strong> Alex Smith</p>
+    
+    <!-- YouTube Review Video -->
+    <div class="owner-review-video">
+      <h5><i class="fa-solid fa-star-half-stroke"></i> Review:</h5>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/lpeMlUFfoAs?si=ItiFjruajCPYM_JY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    
+    <!-- Owner's Statement -->
+    <div class="owner-review-statement">
+      <h5>Owner's Statement:</h5>
+      <p>
+        "The Ducati Panigale V4R offers an unrivaled riding experience. The performance is aggressive, and the bike's handling is razor-sharp. It’s a complete package for anyone seeking thrill and precision. The sound of the V4 engine is like no other, and it is a joy to push it to its limits on the track."
+      </p>
+    </div>
+  </div>
+  
+  <!-- Owner's Review Section for S1000RR -->
+  <div class="owner-review-section" id="s1000rr-owner-review">
+    <h4>Owner's Review - S1000RR</h4>
+    
+    <!-- Owner's Name -->
+    <p><strong>Owner:</strong> Michael Johnson</p>
+    
+    <!-- YouTube Review Video -->
+    <div class="owner-review-video">
+      <h5><i class="fa-solid fa-star-half-stroke"></i> Review:</h5>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/StZUw14Pvw4?si=xGK8xW6pF_Oq2Ui6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    
+    <!-- Owner's Statement -->
+    <div class="owner-review-statement">
+      <h5>Owner's Statement:</h5>
+      <p>
+        "The BMW S1000RR is one of the most refined superbikes I've ever ridden. The combination of power and electronics makes it very easy to handle, even at high speeds. It offers excellent cornering and stability, and the dynamic ride mode changes the character of the bike to suit any rider's preference."
+      </p>
+    </div>
+  </div>
+  
+  <!-- Owner's Review Section for Aprilia RSV4 -->
+  <div class="owner-review-section" id="aprilia-owner-review">
+    <h4>Owner's Review - Aprilia RSV4</h4>
+    
+    <!-- Owner's Name -->
+    <p><strong>Owner:</strong> Sarah Williams</p>
+    
+    <!-- YouTube Review Video -->
+    <div class="owner-review-video">
+      <h5><i class="fa-solid fa-star-half-stroke"></i> Review:</h5>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/KhzYXtKPvA0?si=g2pjNFZqe8VAnQFY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    
+    <!-- Owner's Statement -->
+    <div class="owner-review-statement">
+      <h5>Owner's Statement:</h5>
+      <p>
+        "The Aprilia RSV4 is a perfect blend of power, agility, and design. Its engine is fierce, and the chassis provides incredible feedback, making it a fantastic bike for both the road and the track. The electronics are well-balanced, and the bike feels very connected to the rider."
+      </p>
+    </div>
+  </div>
+  
+  <!-- Owner's Review Section for Honda CBR -->
+  <div class="owner-review-section" id="honda-owner-review">
+    <h4>Owner's Review - Honda CBR1000RR Fireblade</h4>
+    
+    <!-- Owner's Name -->
+    <p><strong>Owner:</strong> David Brown</p>
+    
+    <!-- YouTube Review Video -->
+    <div class="owner-review-video">
+      <h5><i class="fa-solid fa-star-half-stroke"></i> Review:</h5>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/pMAM1kJ0YWI?si=GrECH-5csdjzPI_b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    
+    <!-- Owner's Statement -->
+    <div class="owner-review-statement">
+      <h5>Owner's Statement:</h5>
+      <p>
+        "The Honda CBR is an iconic bike known for its reliability and versatility. It’s not as aggressive as some of the other bikes in this class, but it offers an extremely smooth and comfortable ride. Perfect for long rides and everyday commuting, yet still thrilling when you open it up on the open road."
+      </p>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="text-center py-3 bg-dark text-white">
+    <p>&copy; 2024 The Elite Five - Bikes Review</p>
+  </footer>
+  
+  <!-- AOS Initialization -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-GuXOjSIFPlIPjcmDMp3EkJKa/CyjRrmew2bHVRlAWF4jsI0cGzO3d7a1Lxyly1k2Jf6KopBz0vQ3Klbzj2T6EA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>

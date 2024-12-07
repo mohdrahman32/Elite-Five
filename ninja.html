@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kawasaki Ninja H2R</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Custom Colors */
+        :root {
+            --primary-color: #359D46;
+            --bg-dark: #050302;
+            --bg-dark-green: #4D6157;
+            --bg-darkest: #17241f;
+            --bg-black: #09080A;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .hero-video {
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            font-size: 3rem;
+            font-weight: bold;
+            z-index: 1;
+        }
+
+        .highlight-text {
+            color: var(--primary-color);
+        }
+
+        .back-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 1.5rem;
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        /* Content Section */
+        .section-title {
+            color: var(--primary-color);
+            font-size: 2rem;
+            font-weight: bold;
+            margin-top: 40px;
+        }
+
+        .section-content {
+            padding: 40px;
+            color: white;
+        }
+        .section-content p{
+            font-size: 1.2rem;
+        }
+        li{
+            font-size: 1.2rem;
+        }
+
+        .image-container {
+            max-width: 500px;
+            margin: 20px auto;
+        }
+
+        .rounded-lg{
+            width: 350px;
+        }
+        
+
+        /* Audio Button */
+        .audio-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: var(--primary-color);
+            color: white;
+            font-size: 1rem;
+            padding: 10px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 2;
+        }
+        
+        /* Custom CSS for Slider */
+    .slider-wrapper {
+        position: relative;
+        width: 100%;
+    }
+
+    .slider-container {
+        display: flex;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .slider-item {
+        flex-shrink: 0;
+        width: 100%;
+    }
+
+    button {
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    /* Navigation arrows style */
+    button:hover {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    button i {
+        font-size: 1.5rem;
+    }
+
+
+        /* Footer */
+        .footer {
+            background-color: #359D46;
+            color: #09080A;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Media Queries for Mobile */
+        @media (max-width: 768px) {
+            .hero-text {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .section-content {
+                padding: 20px;
+            }
+
+            .image-container {
+                max-width: 100%;
+            }
+
+            .gallery-images {
+                flex-wrap: wrap;
+            }
+
+            .gallery-images img {
+                width: 48%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-black">
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <video class="hero-video" autoplay muted loop>
+            <source src="ninja/ninja.mp4" type="video/mp4">
+        </video>
+        <div class="hero-text" data-aos="fade-up">
+            <h1>H<span class="highlight-text">2</span>R - Unleash the beast: The Kawasaki Ninja H2R, where engineering meets unbridled power to redefine speed.</h1>
+        </div>
+        <a href="home.html" class="back-btn"><i class="fas fa-backward"></i></a>
+    </div>
+
+    <!-- Content Section -->
+    <div class="section-content">
+        <div data-aos="fade-up">
+            <h2 class="section-title">Kawasaki Ninja H2R: The Pinnacle of Speed and Power</h2>
+            <p>"Unleash the beast: The Kawasaki Ninja H2R, where engineering meets unbridled power to redefine speed."</p>
+            <div class="image-container">
+                <img src="images/h2r.jpg" alt="Kawasaki Ninja H2R" class="rounded-lg">
+            </div>
+            <p>The **Kawasaki Ninja H2R** is an engineering marvel, renowned as the pinnacle of speed, power, and cutting-edge technology in the world of superbikes. Designed exclusively for the track, this beast is a testament to Kawasaki’s relentless pursuit of innovation and performance.</p>
+
+            <h3 class="section-title">Engine & Performance</h3>
+            <ul>
+                <li><strong>Supercharged Powerhouse:</strong> The Ninja H2R is equipped with a 998cc inline-four engine paired with a supercharger, delivering an eye-popping **310 horsepower** (326 hp with RAM air) and 165 Nm of torque. This makes it one of the most powerful motorcycles ever built.</li>
+                <li><strong>Top Speed:</strong> Capable of exceeding **400 km/h (248 mph)**, it holds legendary status for its unparalleled speed.  </li>
+                <li><strong>Precision Tuning:</strong> The engine is meticulously crafted with lightweight components and advanced materials to handle extreme pressures and temperatures.</li>
+            </ul>
+
+            <h3 class="section-title">Design & Aerodynamics</h3>
+            <ul>
+                <li><strong>Aggressive Styling:</strong> The Ninja H2R features a striking design with sharp lines and futuristic aesthetics, reflecting its uncompromising focus on performance.</li>
+                <li><strong>Carbon Fiber Winglets:</strong> Developed for extreme aerodynamics, the winglets ensure stability at high speeds, giving it unmatched downforce.</li>
+                <li><strong>Trellis Frame:</strong> The lightweight, high-tensile steel trellis frame offers superb rigidity and heat dissipation while maintaining agility.</li>
+            </ul>
+
+            <h3 class="section-title">Technology & Features</h3>
+            <ul>
+                <li><strong>Kawasaki Cornering Management Function:</strong> Assists in maintaining optimal cornering performance by modulating engine and braking forces.</li>
+                <li><strong>Traction Control:</strong> Equipped with Kawasaki Traction Control (KTRC) for enhanced grip on various surfaces.</li>
+                <li><strong>Launch Control:</strong> Kawasaki Launch Control Mode (KLCM) ensures optimal acceleration from a standstill.</li>
+                <li><strong>Quick Shifter:</strong> The quick shifter allows for seamless gear changes without using the clutch.</li>
+            </ul>
+
+            <h3 class="section-title">Exclusivity</h3>
+            <ul>
+                <li><strong>Track-Only Machine:</strong> The Ninja H2R is not street-legal, as its raw power and performance exceed the limits of public roads.</li>
+                <li><strong>Limited Production:</strong> Built in limited numbers, the H2R is a collector's dream and a symbol of exclusivity.</li>
+            </ul>
+            <h3 class="section-title">Braking & Suspension</h3>
+            <ul>
+                <li><strong>Braking:</strong> Fitted with Brembo Stylema calipers and large dual disc brakes in the front, it delivers incredible stopping power.</li>
+                <li><strong>Suspension:</strong> High-performance Öhlins rear shock and advanced front forks provide exceptional stability and control at high speeds.</li>
+            </ul>
+
+            <h3 class="section-title">Key Specifications</h3>
+            <ul>
+                <li><strong>Engine:</strong> 998cc, supercharged inline-four</li>
+                <li><strong>Power:</strong> 310 hp (326 hp with RAM air)</li>
+                <li><strong>Torque:</strong> 165 Nm</li>
+                <li><strong>Top Speed:</strong> 400 km/h</li>
+            </ul>
+
+            <h3 class="section-title">Price</h3>
+            <p>The Ninja H2R is a premium machine, with a price tag of approximately **$56,500 USD**, varying by region. Its high cost reflects its advanced engineering and exclusivity.</p>
+
+            <h3 class="section-title">Conclusion</h3>
+            <p>The Kawasaki Ninja H2R is not just a superbike; it’s a statement of engineering excellence and unrelenting ambition. Its performance is unparalleled, and its design pushes the boundaries of what’s possible in motorcycle technology. A ride on the Ninja H2R is not just fast—it’s otherworldly.</p>
+        </div>
+    </div>
+
+    <!-- Engine Sound Section -->
+    <div class="section-content" data-aos="fade-up">
+        <h2 class="section-title">Exhaust Sound</h2>
+        <div class="image-container relative">
+            <img src="images/h2r-exhaust.jpg" alt="H2R Exhaust" class="rounded-lg">
+            <button id="audio-btn" class="audio-btn">Start Engine</button>
+        </div>        
+        <audio id="engine-sound" src="audios/h2r-exhaust.mp3" preload="auto"></audio>
+    </div>
+
+    <!-- Gallery Section -->
+<div class="section-content" data-aos="fade-up">
+    <h2 class="section-title">Gallery</h2>
+    <div class="relative w-full md:w-1/2 mx-auto">
+        <!-- Slider Images -->
+        <div class="slider-wrapper relative overflow-hidden">
+            <div class="slider-container flex transition-all duration-300 ease-in-out">
+                <div class="slider-item w-full">
+                    <img src="ninja/h2r-side.webp" alt="Side View" class="w-full">
+                </div>
+                <div class="slider-item w-full">
+                    <img src="ninja/h2r-front.jpg" alt="Front View" class="w-full">
+                </div>
+                <div class="slider-item w-full">
+                    <img src="ninja/h2r-back.jpg" alt="Back View" class="w-full">
+                </div>
+                <div class="slider-item w-full">
+                    <img src="ninja/h2r-meter.jpg" alt="Meter View" class="w-full">
+                </div>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <button class="absolute left-0 top-1/2 transform -translate-y-1/2 text-white bg-black bg-opacity-50 px-4 py-2 rounded-full" id="prev-btn">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="absolute right-0 top-1/2 transform -translate-y-1/2 text-white bg-black bg-opacity-50 px-4 py-2 rounded-full" id="next-btn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>&copy; 2024 Kawasaki Ninja H2R. All Rights Reserved.</p>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        // Audio control logic
+        const audioBtn = document.getElementById('audio-btn');
+        const engineSound = document.getElementById('engine-sound');
+
+        audioBtn.addEventListener('click', () => {
+            if (engineSound.paused) {
+                engineSound.play();
+                audioBtn.textContent = 'Stop Engine';
+            } else {
+                engineSound.pause();
+                audioBtn.textContent = 'Start Engine';
+            }
+        });
+    </script>
+    <script>
+        let currentIndex = 0;
+        const sliderItems = document.querySelectorAll('.slider-item');
+        const totalItems = sliderItems.length;
+        const sliderContainer = document.querySelector('.slider-container');
+    
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+    
+        // Function to update the slider position
+        const updateSlider = () => {
+            const newTransformValue = -currentIndex * 100; // Move slider items by 100% width
+            sliderContainer.style.transform = `translateX(${newTransformValue}%)`;
+        };
+    
+        // Handle next button click
+        nextBtn.addEventListener('click', () => {
+            if (currentIndex < totalItems - 1) {
+                currentIndex++;
+            } else {
+                currentIndex = 0; // Loop back to the first image
+            }
+            updateSlider();
+        });
+    
+        // Handle previous button click
+        prevBtn.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+            } else {
+                currentIndex = totalItems - 1; // Loop back to the last image
+            }
+            updateSlider();
+        });
+    </script>
+    
+    
+    
+    
+</body>
+</html>

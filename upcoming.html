@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming - Yamaha YZF-R9</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .quote {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 2rem;
+            letter-spacing: 2px;
+            color: #0A0A95;
+        }
+
+        .hero {
+            background: url('images/upcoming.webp') no-repeat center center / cover;
+            position: relative;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(7, 4, 16, 0.7);
+        }
+
+        .hero a {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: #0AD3F2;
+            font-size: 1.5rem;
+            text-decoration: underline;
+            z-index: 10;
+        }
+
+        .image-hover:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+            box-shadow: 2px 2px 15px #106370;
+        }
+
+ 
+    .animated-border {
+        box-shadow: 0 0 20px 4px rgba(255, 0, 0, 0.6);
+        animation: color-pulse 3s infinite;
+    }
+
+    @keyframes color-pulse {
+        0% {
+            box-shadow: 0 0 20px 4px #0AD3F2;
+        }
+        25% {
+            box-shadow: 0 0 20px 4px #106370;
+        }
+        50% {
+            box-shadow: 0 0 20px 4px rgba(0, 0, 255, 0.6);
+        }
+        75% {
+            box-shadow: 0 0 20px 4px #E6DCDA;
+        }
+        100% {
+            box-shadow: 0 0 20px 4px rgba(255, 0, 0, 0.6);
+        }
+    }
+
+    /* Mobile-first adjustments for better responsiveness */
+@media (max-width: 768px) {
+    /* Hero Section */
+    .hero {
+        height: 70vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero a {
+        font-size: 1rem;
+        top: 10px;
+        left: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+        margin: 0 10px;
+    }
+
+    /* Section Padding */
+    section {
+        padding: 12px;
+    }
+
+    /* Images */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Text Content */
+    .text-lg {
+        font-size: 1rem;
+    }
+
+    /* Specifications and Lists */
+    .list-disc {
+        padding-left: 1rem;
+    }
+
+    /* Teaser Section */
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Adjust Quote Font */
+    .quote {
+        font-size: 1.5rem;
+    }
+}
+
+/* Extra small screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .text-lg {
+        font-size: 0.9rem;
+    }
+
+    /* Footer */
+    footer p {
+        font-size: 0.8rem;
+    }
+
+    .image-hover {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+    </style>
+</head>
+
+<body class="bg-[#E6DCDA] text-[#3A3737]">
+
+    <!-- Hero Section -->
+    <section class="hero relative">
+        <div class="hero-overlay"></div>
+        <a href="home.html" class="font-bold"><i class="fas fa-backward"></i></a>
+        <div class="text-center text-white relative z-10">
+            <h1 class="text-6xl font-bold" data-aos="fade-up">Coming Soon...</h1>
+            <p class="text-2xl mt-4" data-aos="fade-up" data-aos-delay="200">"Riding the future, one revolution at a time."</p>
+        </div>
+    </section>
+
+    <!-- Description Section -->
+<section class="py-16 px-6 md:px-20 bg-[#E6DCDA]">
+    <h2 class="text-4xl font-bold mb-8 text-center" data-aos="fade-up">Yamaha YZF-R9</h2>
+    <div class="md:flex flex-col gap-8 items-center">
+        <!-- Image Above -->
+        <div class="md:w-1/2" data-aos="fade-down">
+            <img src="images/r9-front.webp" alt="Yamaha YZF-R9 Front View" class="rounded-lg shadow-lg image-hover w-full md:max-w-[500px] mx-auto">
+        </div>
+        <!-- Main Content -->
+        <div class="md:flex gap-8 items-center">
+            <!-- Image Section -->
+            <div class="md:w-1/2" data-aos="zoom-in">
+                <img src="images/r9.jpg" alt="Yamaha YZF-R9" class="rounded-lg shadow-lg image-hover front">
+            </div>
+            <!-- Text Section -->
+            <div class="md:w-1/2 text-lg space-y-4" data-aos="fade-left">
+                <p>
+                    The <strong>Yamaha YZF-R9</strong>, announced for 2025, represents a significant evolution in Yamaha's supersport lineup, bridging the gap between the YZF-R7 and the flagship YZF-R1.
+                </p>
+                <p>
+                    The YZF-R9 is a brand-new addition to Yamaha's R-Series, designed to deliver performance and accessibility for riders seeking a mid-tier supersport motorcycle. Drawing inspiration from MotoGP technology and Yamaha’s racing heritage, the R9 combines aggressive styling with advanced engineering to appeal to both track enthusiasts and street riders.
+                </p>
+                <!-- Introduction and History -->
+                <h3 class="text-2xl font-bold mt-6">Introduction and History</h3>
+                <p>
+                    The R9 combines cutting-edge technology and Yamaha’s racing expertise to offer a mid-range supersport option that stands out in performance and style. With its aggressive design and advanced engineering, it’s built for both the street and the track.
+                </p>
+                <!-- Specifications -->
+                <h3 class="text-2xl font-bold mt-6">Specifications</h3>
+                <ul class="list-disc list-inside">
+                    <li><strong>Engine Type:</strong> 890cc, liquid-cooled, 3-cylinder, DOHC, 4-valve.</li>
+                    <li><strong>Powertrain:</strong> Yamaha's Chip Controlled Throttle (YCC-T®) delivers precise control.</li>
+                    <li><strong>Transmission:</strong> 6-speed constant mesh with assist and slipper clutch.</li>
+                    <li><strong>Quickshifter:</strong> Third-generation system for clutchless upshifts and downshifts.</li>
+                    <li><strong>Frame:</strong> Lightweight aluminum Deltabox for improved handling.</li>
+                    <li><strong>Suspension:</strong> Fully adjustable KYB forks (front) and linked suspension (rear).</li>
+                    <li><strong>Brakes:</strong> Dual 320mm Brembo Stylema discs (front) and a 220mm disc (rear) with ABS.</li>
+                    <li><strong>Dimensions:</strong> Wet weight: 195 kg; Seat height: 831mm.</li>
+                    <li><strong>Tires:</strong> Front: 120/70 ZR17; Rear: 180/55 ZR17.</li>
+                    <li><strong>Fuel Tank:</strong> 14 liters capacity.</li>
+                </ul>
+                <!-- Electronics and Features -->
+                <h3 class="text-2xl font-bold mt-6">Electronics and Features</h3>
+                <ul class="list-disc list-inside">
+                    <li>6-axis IMU for traction, slide, lift, and brake control.</li>
+                    <li>Yamaha Ride Control (YRC) with customizable modes.</li>
+                    <li>GPS-integrated Y-TRAC telemetry for real-time performance tracking.</li>
+                    <li>Full-color 5-inch TFT display.</li>
+                    <li>Launch control, cruise control, and full LED lighting.</li>
+                </ul>
+                <!-- Pricing and Availability -->
+                <h3 class="text-2xl font-bold mt-6">Pricing and Availability</h3>
+                <p>
+                    The Yamaha YZF-R9 is priced at <strong>$12,499</strong> and will be available in three stunning color options: Team Yamaha Blue, Matte Raven Black, and Intensity White/Redline. Global dealerships will begin offering the bike in mid-2025.
+                </p>
+                <!-- Conclusion -->
+                <h3 class="text-2xl font-bold mt-6">Conclusion</h3>
+                <p>
+                    With its advanced electronics, powerful engine, and race-ready chassis, the Yamaha YZF-R9 is set to become a standout option in the supersport category, catering to riders who want a balance between performance, technology, and style. For more information, visit <a target="_main" href="https://www.motorcyclistonline.com" class="text-[#0A0A95] underline font-bold">Motorcyclist Online</a> or 
+                    <a href="https://www.totalmotorcycle.com" class="text-[#0A0A95] underline font-bold" target="_main">Total Motorcycle</a>.
+                </p>
+            </div>
+        </div>
+        <!-- Image Below -->
+        <div class="md:w-3/4 mt-8" data-aos="fade-up">
+            <img src="images/r9-back.webp" alt="Yamaha YZF-R9 Back View" class="rounded-lg shadow-lg image-hover">
+        </div>
+    </div>
+</section>
+
+
+    <!-- Teaser Section -->
+<section class="py-16 px-6 md:px-20 bg-[#070410] text-white text-center">
+    <h2 class="text-4xl font-bold mb-8" data-aos="fade-up">Unleash the Beast: Watch the Teaser</h2>
+    <div class="flex justify-center" data-aos="zoom-in">
+        <iframe class="rounded-lg animated-border" width="600" height="315" 
+            src="https://www.youtube.com/embed/3V-fC_nJFMM?si=BZzn-E4Z5iJYHN3O" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </div>
+</section>
+
+    <!-- Quote Section -->
+    <section class="py-16 text-center">
+        <p class="quote" data-aos="fade-up">"The Yamaha YZF-R9: Where innovation meets adrenaline."</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-[#3A3737] text-[#E6DCDA] text-center py-4">
+        <p>&copy; 2025 Yamaha Motors. All Rights Reserved.</p>
+    </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

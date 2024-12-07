@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprilia RSV4</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Custom Colors */
+        :root {
+            --background-color: #989FA2; /* Light Gray */
+            --primary-color: #000000; /* Black */
+            --accent-color: #B5070F; /* Bright Red */
+            --secondary-color: #2C1E11; /* Dark Brown */
+            --dark-color: #040909; /* Deep Black */
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            background-color: var(--dark-color);
+        }
+
+        .hero-video {
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: var(--background-color);
+            text-align: center;
+            font-size: 3rem;
+            font-weight: bold;
+            z-index: 1;
+        }
+
+        .highlight-text {
+            color: var(--accent-color);
+        }
+
+        .back-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 1.5rem;
+            color: var(--background-color);
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        /* Section Title */
+        .section-title {
+            color: var(--accent-color);
+            font-size: 2rem;
+            font-weight: bold;
+            margin-top: 40px;
+        }
+
+        /* Content Section */
+        .section-content {
+            padding: 40px;
+            color: var(--primary-color);
+        }
+
+        .section-content p, li {
+            font-size: 1.2rem;
+        }
+
+        .image-container {
+            max-width: 500px;
+            margin: 20px auto;
+        }
+
+        .rounded-lg {
+            width: 350px;
+        }
+
+        /* Audio Button */
+        .audio-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: var(--accent-color);
+            color: var(--background-color);
+            font-size: 1rem;
+            padding: 10px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        /* Slider Navigation */
+        button {
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--background-color);
+            background-color: var(--primary-color);
+            border: none;
+        }
+
+        button:hover {
+            background-color: var(--accent-color);
+        }
+
+        button i {
+            font-size: 1.5rem;
+        }
+
+        /* Custom CSS for Slider */
+    .slider-wrapper {
+        position: relative;
+        width: 100%;
+    }
+
+    .slider-container {
+        display: flex;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .slider-item {
+        flex-shrink: 0;
+        width: 100%;
+    }
+
+    button {
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    /* Navigation arrows style */
+    button:hover {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    button i {
+        font-size: 1.5rem;
+    }
+
+
+    /* Footer */
+    .footer {
+        background-color: var(--dark-color);
+        color: var(--secondary-color);
+        text-align: center;
+        padding: 20px;
+    }
+
+        /* Media Queries for Mobile */
+        @media (max-width: 768px) {
+            .hero-text {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .section-content {
+                padding: 20px;
+            }
+
+            .image-container {
+                max-width: 100%;
+            }
+
+            .gallery-images {
+                flex-wrap: wrap;
+            }
+
+            .gallery-images img {
+                width: 48%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <video class="hero-video" autoplay muted loop>
+            <source src="aprilia/aprillia.mp4" type="video/mp4">
+        </video>
+        <div class="hero-text" data-aos="fade-up">
+            <h1>RSV<span class="highlight-text">4</span> <br>- Italian Craftsmanship Meets Racing Dominance</h1>
+        </div>
+        <a href="home.html" class="back-btn"><i class="fas fa-backward"></i></a>
+    </div>
+
+    <!-- Content Section -->
+    <div class="section-content">
+        <div data-aos="fade-up">
+            <h2 class="section-title">Aprilia RSV4: Italian Craftsmanship Meets Racing Dominance</h2>
+            <p>"Where passion meets precision: The Aprilia RSV4—a superbike born to conquer the track and inspire the road."</p>
+            <div class="image-container">
+                <img src="images/rsv4.jpg" alt="Ducati Panigale V4 R" class="rounded-lg">
+            </div>
+            <p>The <strong>Aprilia RSV4</strong> is a culmination of decades of racing heritage and Italian engineering excellence. Designed with a relentless focus on performance, agility, and aesthetics, this superbike offers a riding experience that blends adrenaline and artistry. Its roots in Aprilia’s World Superbike (WSBK) and MotoGP success are evident in every detail.</p>
+
+            <h3 class="section-title">Engine & Performance</h3>
+            <ul>
+                <li><strong>V4 Powerplant:</strong> At its core is a 1,099cc V4 engine delivering 217 horsepower and 125 Nm of torque, making it one of the most powerful superbikes in its class.</li>
+                <li><strong>Top Speed:</strong> Capable of exceeding 300 km/h (186 mph), the RSV4 provides relentless power and excitement.</li>
+                <li><strong>Linear Power Delivery:</strong> The engine’s smooth and predictable power curve ensures control and confidence on both road and track.</li>
+            </ul>
+
+            <h3 class="section-title">Design & Aerodynamics</h3>
+            <ul>
+                <li><strong>Race-Inspired Design:</strong> The RSV4 features aggressive lines, compact dimensions, and a distinctive triple-headlight design that reflects its track-focused intent.</li>
+                <li><strong>Lightweight Build:</strong> The aluminum dual-beam chassis is a hallmark of Aprilia’s engineering, offering exceptional rigidity and precise handling.</li>
+                <li><strong>Winglets:</strong> Aerodynamic winglets are seamlessly incorporated into the fairing, providing increased downforce and stability at high speeds.</li>
+            </ul>
+
+            <h3 class="section-title">Technology & Features</h3>
+            <ul>
+                <li><strong>Aprilia Performance Ride Control (APRC):</strong> A suite of electronics includes traction control, wheelie control, launch control, and cruise control, customizable for different riding conditions.</li>
+                <li><strong>Quick Shift:</strong> The bi-directional quick shifter allows seamless gear changes without using the clutch, enhancing performance and comfort. </li>
+                <li><strong>TFT Display:</strong> A vibrant, fully digital display provides essential riding data, telemetry, and customizable settings..</li>
+                <li><strong>Cornering ABS:</strong> Ensures optimal braking performance even while leaning into turns, providing confidence in all situations.</li>
+            </ul>
+
+            <h3 class="section-title">Handling & Suspension</h3>
+            <ul>
+                <li><strong>Öhlins Suspension:</strong> Fully adjustable front forks and rear shock provide unmatched comfort and performance, adapting effortlessly to road or track use.</li>
+                <li><strong>Braking System:</strong> High-performance Brembo Stylema calipers deliver precise and powerful stopping power, enhancing rider safety and control.</li>
+            </ul>
+
+            <h3 class="section-title">Exclusivity</h3>
+            <ul>
+                <li><strong>Race-Derived DNA:</strong> Developed with insights from Aprilia’s dominance in WSBK and MotoGP, the RSV4 is a direct descendant of championship-winning bikes.</li>
+                <li><strong>Attention to Detail:</strong> Crafted with Italian precision, the RSV4 stands as a masterpiece of design and engineering.</li>
+            </ul>
+
+            <h3 class="section-title">Key Specifications</h3>
+            <ul>
+                <li><strong>Engine:</strong> 1,099cc, V4</li>
+                <li><strong>Power:</strong> 217 hp</li>
+                <li><strong>Top Speed:</strong> Over 300 km/h</li>
+                <li><strong>Torque:</strong> 125 Nm</li>
+                <li><strong>Weight:</strong> 202 kg (wet)</li>
+            </ul>
+
+            <h3 class="section-title">Price</h3>
+            <p>The Aprilia RSV4 is priced around <strong>$25,000 USD</strong>, reflecting its premium build quality, cutting-edge technology, and racing pedigree.</p>
+
+            <h3 class="section-title">Conclusion</h3>
+            <p>The Aprilia RSV4 is more than a superbike—it’s a statement of passion, performance, and precision. Its track-inspired design, state-of-the-art technology, and exhilarating performance make it a favorite among purists and thrill-seekers alike. Whether carving corners or chasing speed records, the RSV4 delivers a ride like no other.</p>
+        </div>
+    </div>
+
+    <!-- Engine Sound Section -->
+    <div class="section-content" data-aos="fade-up">
+        <h2 class="section-title">Exhaust Sound</h2>
+        <div class="image-container relative">
+            <img src="images/rsv4-exhaust.png" alt="H2R Exhaust" class="rounded-lg">
+            <button id="audio-btn" class="audio-btn">Start Engine</button>
+        </div>        
+        <audio id="engine-sound" src="audios/rsv4-exhaust.mp3" preload="auto"></audio>
+    </div>
+
+    <!-- Gallery Section -->
+<div class="section-content" data-aos="fade-up">
+    <h2 class="section-title">Gallery</h2>
+    <div class="relative w-full md:w-1/2 mx-auto">
+        <!-- Slider Images -->
+        <div class="slider-wrapper relative overflow-hidden">
+            <div class="slider-container flex transition-all duration-300 ease-in-out">
+                <div class="slider-item w-full">
+                    <img src="aprilia/rsv4-side.jpg" alt="Side View" class="w-full">
+                </div>
+                <div class="slider-item w-full">
+                    <img src="aprilia/rsv4-front.webp" alt="Front View" class="w-full">
+                </div>
+                <div class="slider-item w-full">
+                    <img src="aprilia/rsv4-back.webp" alt="Back View" class="w-full">
+                </div>
+                <div class="slider-item w-full">
+                    <img src="aprilia/rsv4-meter.jpg" alt="Meter View" class="w-full">
+                </div>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <button class="absolute left-0 top-1/2 transform -translate-y-1/2 text-white bg-black bg-opacity-50 px-4 py-2 rounded-full" id="prev-btn">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="absolute right-0 top-1/2 transform -translate-y-1/2 text-white bg-black bg-opacity-50 px-4 py-2 rounded-full" id="next-btn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>&copy; 2024 Aprilia RSV4. All Rights Reserved.</p>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        // Audio control logic
+        const audioBtn = document.getElementById('audio-btn');
+        const engineSound = document.getElementById('engine-sound');
+
+        audioBtn.addEventListener('click', () => {
+            if (engineSound.paused) {
+                engineSound.play();
+                audioBtn.textContent = 'Stop Engine';
+            } else {
+                engineSound.pause();
+                audioBtn.textContent = 'Start Engine';
+            }
+        });
+    </script>
+    <script>
+        let currentIndex = 0;
+        const sliderItems = document.querySelectorAll('.slider-item');
+        const totalItems = sliderItems.length;
+        const sliderContainer = document.querySelector('.slider-container');
+    
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+    
+        // Function to update the slider position
+        const updateSlider = () => {
+            const newTransformValue = -currentIndex * 100; // Move slider items by 100% width
+            sliderContainer.style.transform = `translateX(${newTransformValue}%)`;
+        };
+    
+        // Handle next button click
+        nextBtn.addEventListener('click', () => {
+            if (currentIndex < totalItems - 1) {
+                currentIndex++;
+            } else {
+                currentIndex = 0; // Loop back to the first image
+            }
+            updateSlider();
+        });
+    
+        // Handle previous button click
+        prevBtn.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+            } else {
+                currentIndex = totalItems - 1; // Loop back to the last image
+            }
+            updateSlider();
+        });
+    </script>
+    
+    
+    
+    
+</body>
+</html>

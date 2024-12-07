@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ducati Panigale V4 R</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Custom Colors */
+        :root {
+            --primary-color: #B60404;
+            --text-light: #DEDEDE;
+            --bg-dark: #252424;
+            --bg-darker: #6C6B69;
+            --highlight-color: #7B2834;
+        }
+
+        body{
+            background-color: var(--text-light);
+        }
+        /* Hero Section */
+        .hero-section {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            background-color: var(--bg-dark);
+        }
+
+        .hero-video {
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: var(--text-light);
+            text-align: center;
+            font-size: 3rem;
+            font-weight: bold;
+            z-index: 1;
+        }
+
+        .highlight-text {
+            color: var(--primary-color);
+        }
+
+        .back-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 1.5rem;
+            color: var(--text-light);
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        /* Content Section */
+        .section-title {
+            color: var(--primary-color);
+            font-size: 2rem;
+            font-weight: bold;
+            margin-top: 40px;
+        }
+
+        .section-content {
+            padding: 40px;
+            color: var(--bg-dark);
+        }
+        .section-content p {
+            font-size: 1.2rem;
+        }
+        li {
+            font-size: 1.2rem;
+        }
+
+        .image-container {
+            max-width: 500px;
+            margin: 20px auto;
+        }
+
+        .rounded-lg {
+            width: 350px;
+        }
+        
+
+        /* Audio Button */
+        .audio-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: var(--primary-color);
+            color: white;
+            font-size: 1rem;
+            padding: 10px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 2;
+        }
+        
+        /* Custom CSS for Slider */
+    .slider-wrapper {
+        position: relative;
+        width: 100%;
+    }
+
+    .slider-container {
+        display: flex;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .slider-item {
+        flex-shrink: 0;
+        width: 100%;
+    }
+
+    button {
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    /* Navigation arrows style */
+    button:hover {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    button i {
+        font-size: 1.5rem;
+    }
+
+
+        /* Footer */
+        .footer {
+            background-color: #7B2834;
+            color: #09080A;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Media Queries for Mobile */
+        @media (max-width: 768px) {
+            .hero-text {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .section-content {
+                padding: 20px;
+            }
+
+            .image-container {
+                max-width: 100%;
+            }
+
+            .gallery-images {
+                flex-wrap: wrap;
+            }
+
+            .gallery-images img {
+                width: 48%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <video class="hero-video" autoplay muted loop>
+            <source src="ducati/ducati.mp4" type="video/mp4">
+        </video>
+        <div class="hero-text" data-aos="fade-up">
+            <h1>Panigale <span class="highlight-text">V4 R</span><br>- Pure performance. Unstoppable passion.</h1>
+        </div>
+        <a href="home.html" class="back-btn"><i class="fas fa-backward"></i></a>
+    </div>
+
+    <!-- Content Section -->
+    <div class="section-content">
+        <div data-aos="fade-up">
+            <h2 class="section-title">Ducati Panigale V4 R: The Epitome of Italian Precision</h2>
+            <p>"Where art meets performance: The Ducati Panigale V4 R—a symphony of speed, precision, and style."</p>
+            <div class="image-container">
+                <img src="images/v4r.avif" alt="Ducati Panigale V4 R" class="rounded-lg">
+            </div>
+            <p>The **Ducati Panigale V4 R** is a masterpiece of engineering and design, epitomizing the fusion of Italian artistry and racing DNA. Crafted for enthusiasts who demand the best, this superbike offers track-level performance with breathtaking aesthetics, making it a benchmark in the world of high-performance motorcycles.</p>
+
+            <h3 class="section-title">Engine & Performance</h3>
+            <ul>
+                <li><strong>Desmosedici Stradale R Engine:</strong> At its heart is a 998cc V4 engine that produces 218 horsepower in stock configuration, rising to 240.5 hp with a racing exhaust system. The engine delivers blistering performance and a thrilling sound inspired by Ducati’s MotoGP machines.</li>
+                <li><strong>High Revving Beast:</strong> It reaches a screaming 16,500 RPM, offering unrivaled exhilaration on both the track and road.</li>
+                <li><strong>Aerodynamic Efficiency:</strong> Engineered to maximize speed and stability, it blends power with precision handling.</li>
+            </ul>
+
+            <h3 class="section-title">Design & Aerodynamics</h3>
+            <ul>
+                <li><strong>Timeless Aesthetics:</strong> The Panigale V4 R features Ducati's iconic sleek and aggressive design, with an all-red livery accented by carbon fiber elements.</li>
+                <li><strong>Advanced Winglets:</strong> Developed from Ducati’s racing programs, these winglets generate exceptional downforce, ensuring stability at high speeds.</li>
+                <li><strong>Lightweight Build:</strong> Extensive use of lightweight materials, including carbon fiber and aluminum, keeps the bike's weight to a mere 172 kg (dry weight).</li>
+            </ul>
+
+            <h3 class="section-title">Technology & Features</h3>
+            <ul>
+                <li><strong>Racing Electronics Suite:</strong> Includes Ducati Traction Control (DTC), Slide Control (DSC), Wheelie Control (DWC), and Engine Brake Control (EBC), ensuring precise handling in any condition.</li>
+                <li><strong>Quick Shift:</strong> Enables clutchless up and downshifting for seamless performance.</li>
+                <li><strong>TFT Display:</strong> A 5-inch color TFT display provides a clear interface for riding modes, telemetry, and diagnostics.</li>
+                <li><strong>Ride Modes:</strong> Three custom modes (Race, Sport, and Street) allow riders to tailor the bike's performance to their preferences.</li>
+            </ul>
+
+            <h3 class="section-title">Track-Ready Performance</h3>
+            <ul>
+                <li><strong>Chassis & Suspension:</strong> The aluminum front frame and Öhlins NPX25/30 electronically controlled suspension ensure razor-sharp agility and superior feedback.</li>
+                <li><strong>Braking System:</strong> Brembo Stylema monobloc calipers paired with twin 330mm discs deliver outstanding braking power.</li>
+            </ul>
+
+            <h3 class="section-title">Exclusivity</h3>
+            <ul>
+                <li><strong>Homologation Special:</strong> Built to meet World Superbike (WSBK) regulations, the Panigale V4 R is a rare and coveted machine, appealing to racing enthusiasts and collectors alike.</li>
+                <li><strong>Limited Production:</strong> Ducati produces the V4 R in limited numbers, enhancing its exclusivity and desirability.</li>
+            </ul>
+
+            <h3 class="section-title">Key Specifications</h3>
+            <ul>
+                <li><strong>Engine:</strong> 998cc, V4 Desmosedici Stradale R</li>
+                <li><strong>Power:</strong> 218 hp (240.5 hp with racing exhaust)</li>
+                <li><strong>Top Speed:</strong> Over 300 km/h</li>
+                <li><strong>Torque:</strong> 112 Nm</li>
+                <li><strong>Weight:</strong> 172 kg (dry)</li>
+            </ul>
+
+            <h3 class="section-title">Price</h3>
+            <p>The Ducati Panigale V4 R is priced around $40,000 USD, reflecting its premium build, cutting-edge technology, and racing pedigree.</p>
+
+            <h3 class="section-title">Conclusion</h3>
+            <p>The Ducati Panigale V4 R is not just a motorcycle; it’s a statement of perfection and passion. With its track-focused performance, advanced technology, and stunning design, it stands as a testament to Ducati’s commitment to creating bikes that thrill and inspire. For those who crave speed, precision, and exclusivity, the Panigale V4 R is the ultimate ride.</p>
+        </div>
+    </div>
+
+    <!-- Engine Sound Section -->
+    <div class="section-content" data-aos="fade-up">
+        <h2 class="section-title">Exhaust Sound</h2>
+        <div class="image-container relative">
+            <img src="images/v4r-exhaust.webp" alt="H2R Exhaust" class="rounded-lg">
+            <button id="audio-btn" class="audio-btn">Start Engine</button>
+        </div>        
+        <audio id="engine-sound" src="audios/v2r-exhaust.mp3" preload="auto"></audio>
+    </div>
+
+    <!-- Gallery Section -->
+<div class="section-content" data-aos="fade-up">
+    <h2 class="section-title">Gallery</h2>
+    <div class="relative w-full md:w-1/2 mx-auto">
+        <!-- Slider Images -->
+        <div class="slider-wrapper relative overflow-hidden">
+            <div class="slider-container flex transition-all duration-300 ease-in-out">
+                <div class="slider-item w-full">
+                    <img src="ducati/v4r-side.webp" alt="Side View" class="w-full">
+                </div>
+                <div class="slider-item w-full">
+                    <img src="ducati/v4r-front.webp" alt="Front View" class="w-full">
+                </div>
+                <div class="slider-item w-full">
+                    <img src="ducati/v4r-back.webp" alt="Back View" class="w-full">
+                </div>
+                <div class="slider-item w-full">
+                    <img src="ducati/v4r-meter.webp" alt="Meter View" class="w-full">
+                </div>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <button class="absolute left-0 top-1/2 transform -translate-y-1/2 text-white bg-black bg-opacity-50 px-4 py-2 rounded-full" id="prev-btn">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="absolute right-0 top-1/2 transform -translate-y-1/2 text-white bg-black bg-opacity-50 px-4 py-2 rounded-full" id="next-btn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>&copy; 2024 Ducati Panigale v4r. All Rights Reserved.</p>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        // Audio control logic
+        const audioBtn = document.getElementById('audio-btn');
+        const engineSound = document.getElementById('engine-sound');
+
+        audioBtn.addEventListener('click', () => {
+            if (engineSound.paused) {
+                engineSound.play();
+                audioBtn.textContent = 'Stop Engine';
+            } else {
+                engineSound.pause();
+                audioBtn.textContent = 'Start Engine';
+            }
+        });
+    </script>
+    <script>
+        let currentIndex = 0;
+        const sliderItems = document.querySelectorAll('.slider-item');
+        const totalItems = sliderItems.length;
+        const sliderContainer = document.querySelector('.slider-container');
+    
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+    
+        // Function to update the slider position
+        const updateSlider = () => {
+            const newTransformValue = -currentIndex * 100; // Move slider items by 100% width
+            sliderContainer.style.transform = `translateX(${newTransformValue}%)`;
+        };
+    
+        // Handle next button click
+        nextBtn.addEventListener('click', () => {
+            if (currentIndex < totalItems - 1) {
+                currentIndex++;
+            } else {
+                currentIndex = 0; // Loop back to the first image
+            }
+            updateSlider();
+        });
+    
+        // Handle previous button click
+        prevBtn.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+            } else {
+                currentIndex = totalItems - 1; // Loop back to the last image
+            }
+            updateSlider();
+        });
+    </script>
+    
+    
+    
+    
+</body>
+</html>

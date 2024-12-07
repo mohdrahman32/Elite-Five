@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Five - Home</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Custom Styles */
+        body {
+            background-color: #f0f4f1; /* Light Palette Background */
+        }
+        .fullscreen-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index: 9999;
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+        .fullscreen-video video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .skip-button {
+            position: absolute;
+            bottom: 10%;
+            right: 5%;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: black;
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 1000;
+            transition: background-color 0.3s ease;
+        }
+        
+        @media (max-width: 768px) {
+            .skip-button {
+                bottom: 5%; /* Adjust position for smaller screens */
+                right: 5%;
+                font-size: 0.9rem; /* Make text smaller on mobile */
+            }
+        }
+        
+        .skip-button:hover {
+            background-color: rgba(255, 255, 255, 0.233);
+        }
+        nav {
+            background-color: #1b1c1c; /* Dark Background for Nav */
+            color: #f0f4f1;
+        }
+        .hero-section {
+            background: url('images/home-back.webp') center/cover no-repeat;
+            position: relative;
+            height: 70vh;
+            color: white;
+        }
+        .hero-overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .bike-card {
+            background-color: #3e3f3a;
+            color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .bike-card:hover {
+            transform: scale(1.05);
+        }
+        .bike-card img {
+            object-fit: contain; /* Ensures complete image is visible */
+            height: 200px;
+            width: 100%;
+        }
+        footer {
+            background-color: #1b1c1c;
+            color: #b8c3c1;
+        }
+        .fullscreen-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index: 9999;
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+        .fullscreen-video video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body class="font-sans">
+
+    <!-- Nav Section -->
+    <nav class="p-4 sticky top-0 shadow-md flex justify-between items-center animate__animated animate__fadeInDown">
+        <h1 class="text-xl font-bold uppercase"><a href="#top5">Elite Five</a></h1>
+        <ul class="flex space-x-6">
+            <li><a href="comparison.html" class="hover:text-gray-300">Compare</a></li>
+            <li><a href="review.html" class="hover:text-gray-300">Reviews</a></li>
+            <li><a href="feature.html" class="hover:text-gray-300">Features</a></li>
+            <li><a href="Upcoming.html" class="hover:text-gray-300">Upcoming</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section" data-aos="fade-up">
+        <div class="hero-overlay"></div>
+        <div class="relative h-full flex flex-col justify-center items-center text-center px-4">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Ride the Pinnacle of Performance</h1>
+            <p class="text-lg md:text-2xl">Life’s too short for ordinary rides—embrace the extraordinary with the Elite Five.</p>
+        </div>
+    </div>
+
+    <!-- Content Section -->
+    <section class="p-8">
+        <!-- Step 1 -->
+        <h2 class="text-3xl font-bold mb-4 text-gray-800" data-aos="fade-right" id="top5">Elite Five</h2>
+        <p class="text-gray-700 mb-6" data-aos="fade-right">Superbikes are not just machines; they are the epitome of speed, power, and technology. Experience the thrill of riding on the finest two-wheelers crafted for excellence.</p>
+        <hr class="my-6" data-aos="fade-in">
+
+        <!-- Step 2 -->
+        <h2 class="text-3xl font-bold mb-4 text-gray-800" data-aos="fade-right">5 Ultimate Speed Demons</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Bike Cards -->
+            <div class="bike-card p-4">
+                <h3 class="text-2xl font-bold mb-2">Kawasaki Ninja H2r</h3>
+                <img src="images/ninja.png" alt="Kawasaki Ninja H2r" class="mb-4 w-full h-48 object-cover">
+                <p class="mb-4">The Ninja H2r dominates the track with unmatched speed and cutting-edge engineering.</p>
+                <button onclick="playFullscreenVideo('ninja/ninja.mp4', 'ninja.html')" class="bg-white text-black px-4 py-2 rounded hover:bg-gray-300 hover:text-black transition duration-300 ease-in-out">
+                    <i class="fa-solid fa-motorcycle"></i> Ride Me
+                </button>
+            </div>
+            <div class="bike-card p-4">
+                <h3 class="text-2xl font-bold mb-2">Ducati Panigale v4r</h3>
+                <img src="images/ducati.png" alt="Ducati Panigale v4r" class="mb-4 w-full h-48 object-cover">
+                <p class="mb-4">Ducati’s Panigale V4r offers relentless performance and Italian craftsmanship.</p>
+                <button onclick="playFullscreenVideo('ducati/ducati.mp4', 'ducati.html')" class="bg-white text-black px-4 py-2 rounded hover:bg-gray-300 hover:text-black transition duration-300 ease-in-out">
+                    <i class="fa-solid fa-motorcycle"></i> Ride Me
+                </button>
+            </div>
+            <div class="bike-card p-4">
+                <h3 class="text-2xl font-bold mb-2">BMW s1000r</h3>
+                <img src="images/bmw.png" alt="Ducati Panigale v4r" class="mb-4 w-full h-48 object-cover">
+                <p class="mb-4">A streetfighter with razor-sharp precision and unmatched agility, blending power and sophistication for the ultimate thrill.</p>
+                <button onclick="playFullscreenVideo('bmw/bmw.mp4', 'bmw.html')" class="bg-white text-black px-4 py-2 rounded hover:bg-gray-300 hover:text-black transition duration-300 ease-in-out">
+                    <i class="fa-solid fa-motorcycle"></i> Ride Me
+                </button>
+            </div>
+            <div class="bike-card p-4">
+                <h3 class="text-2xl font-bold mb-2">Aprillia rsv4</h3>
+                <img src="images/aprilia.png" alt="Ducati Panigale v4r" class="mb-4 w-full h-48 object-cover">
+                <p class="mb-4">A masterpiece of Italian engineering, delivering blistering speed and track-level performance with impeccable style.</p>
+                <button onclick="playFullscreenVideo('aprilia/aprillia.mp4', 'aprilia.html')" class="bg-white text-black px-4 py-2 rounded hover:bg-gray-300 hover:text-black transition duration-300 ease-in-out">
+                    <i class="fa-solid fa-motorcycle"></i> Ride Me
+                </button>
+            </div>
+            <div class="bike-card p-4">
+                <h3 class="text-2xl font-bold mb-2">Honda CBR1000rr Fireblade</h3>
+                <img src="images/honda.png" alt="Ducati Panigale v4r" class="mb-4 w-full h-48 object-cover">
+                <p class="mb-4">A legendary superbike that combines cutting-edge technology with perfect balance, built to dominate the road and track.</p>
+                <button onclick="playFullscreenVideo('honda/honda.mp4', 'honda.html')" class="bg-white text-black px-4 py-2 rounded hover:bg-gray-300 hover:text-black transition duration-300 ease-in-out">
+                    <i class="fa-solid fa-motorcycle"></i> Ride Me
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="p-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- About Us Section -->
+            <div>
+                <h3 class="text-xl font-bold mb-2">About Us</h3>
+                <p class="text-sm text-gray-300">
+                    Our mission is to redefine the biking experience by showcasing the world’s finest machines. Meet our team of biking enthusiasts driven by passion and performance.
+                </p>
+            </div>
+    
+            <!-- Contact Us Section -->
+            <div>
+                <h3 class="text-xl font-bold mb-2">Contact Us</h3>
+                <ul class="space-y-2">
+                    <li>Email: contact@elitefive.com</li>
+                    <li>
+                        <div class="flex space-x-4">
+                            <!-- Instagram Icon -->
+                            <a href="https://instagram.com" target="_blank" class="hover:text-white">
+                                <i class="fab fa-instagram text-2xl"></i>
+                            </a>
+                            <!-- Twitter (X) Icon -->
+                            <a href="https://twitter.com" target="_blank" class="hover:text-white">
+                                <i class="fab fa-x-twitter text-2xl"></i>
+                            </a>
+                            <!-- Facebook Icon -->
+                            <a href="https://facebook.com" target="_blank" class="hover:text-white">
+                                <i class="fab fa-facebook text-2xl"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+
+   <!-- Fullscreen Video Overlay -->
+    <div id="fullscreen-video" class="fullscreen-video flex">
+        <video id="video-player"></video>
+        <button id="skip-button" class="skip-button"><i class="fa-solid fa-forward"></i></button>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        // Play video and provide a skip option
+        function playFullscreenVideo(videoFile, nextPage) {
+            const videoOverlay = document.getElementById('fullscreen-video');
+            const videoPlayer = document.getElementById('video-player');
+            const skipButton = document.getElementById('skip-button');
+
+            // Set video source
+            videoPlayer.src = videoFile;
+            videoOverlay.style.display = 'flex';
+            videoPlayer.play();
+
+            // Handle skip functionality
+            skipButton.onclick = () => {
+                videoPlayer.pause();
+                videoOverlay.style.display = 'none';
+                window.location.href = nextPage;
+            };
+
+            // Redirect to the next page after video ends
+            videoPlayer.onended = function () {
+                videoOverlay.style.display = 'none';
+                window.location.href = nextPage;
+            };
+
+            // Check if it's a mobile device and only attempt to lock orientation after video starts playing
+            if (window.matchMedia("(max-width: 768px)").matches) {
+                // Attempt to lock the screen to landscape if the user clicks the video
+                if (screen.orientation && screen.orientation.lock) {
+                    screen.orientation.lock("landscape").catch((err) => {
+                        console.warn("Could not lock orientation:", err);
+                    });
+                }
+                // Make the video fullscreen for mobile devices
+                if (videoPlayer.requestFullscreen) {
+                    videoPlayer.requestFullscreen();
+                } else if (videoPlayer.mozRequestFullScreen) { // Firefox
+                    videoPlayer.mozRequestFullScreen();
+                } else if (videoPlayer.webkitRequestFullscreen) { // Chrome and Safari
+                    videoPlayer.webkitRequestFullscreen();
+                }
+            }
+        }
+    </script>
+</body>
+</html>

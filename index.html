@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Elite Five</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for the video background */
+        #video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .content {
+            z-index: 10;
+        }
+    </style>
+</head>
+<body class="bg-black">
+
+    <!-- Video background -->
+    <video id="video-background" autoplay muted loop>
+        <source src="bmw/bmw.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Title Page Content -->
+    <div class="flex items-center justify-center min-h-screen text-white text-center content">
+        <div class="animate__animated animate__fadeIn animate__delay-1s">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4">
+                Welcome to <span class="text-red-500">The Elite Five</span>: Top 5 Bikes in the World
+            </h1>
+            <p class="text-lg md:text-2xl mb-8">
+                Discover the fastest, most powerful, and innovative bikes globally.
+            </p>
+            <button id="enterButton" class="bg-red-500 text-white font-semibold px-6 py-3 rounded-full text-xl hover:bg-red-600 transition duration-300 ease-in-out animate__animated animate__fadeInUp animate__delay-2s">
+                Start Engine!
+            </button>
+        </div>
+    </div>
+
+    <!-- Tailwind JS & Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript to handle audio and navigation -->
+    <script>
+        document.getElementById('enterButton').addEventListener('click', function () {
+            // Create an audio element and set the source to exhaust.mp3
+            const audio = new Audio('exhaust.mp3');
+            
+            // Play the audio
+            audio.play();
+
+            // Navigate to home.html after the audio finishes
+            audio.addEventListener('ended', function () {
+                window.location.href = 'home.html';
+            });
+        });
+    </script>
+</body>
+</html>

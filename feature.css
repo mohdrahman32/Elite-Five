@@ -1,0 +1,40 @@
+#back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.5rem;
+    color: #C24244;
+    background: #1F2C2E;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* Feature Page Custom Styles */
+.feature-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.feature-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.spec-section {
+    padding: 20px;
+    border-radius: 8px;
+    background: #ECEAE5;
+    color: #1F2C2E;
+}
+
+.spec-section h3 {
+    color: #C24244;
+}
+
+a:hover {
+    text-decoration: underline;
+}

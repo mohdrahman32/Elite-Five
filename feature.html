@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feature Page</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="feature.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+    <!-- Hero Section -->
+    <header class="relative h-screen bg-cover bg-center" style="background-image: url('images/features.webp');">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
+    
+        <!-- Home Anchor Tag -->
+                 <a href="home.html" id="back-btn" class="absolute top-4 left-4 z-50 text-eceae5 bg-c24244 py-2 px-4 rounded-lg hover:bg-1f2c2e hover:text-eceae5 transition-all duration-300 shadow-lg"><i class="fas fa-backward"></i></a>
+
+
+    
+        <!-- Title and Quote -->
+        <div class="relative h-full flex flex-col items-center justify-center text-center text-white">
+            <h1 class="text-5xl font-bold mb-4" data-aos="fade-down">SPECIFICATIONS</h1>
+            <p class="text-xl max-w-xl" data-aos="fade-up">"Unleashing precision, performance, and power for the ultimate ride."</p>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+<section class="py-16 px-8">
+    <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">Explore Features</h2>
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+        <!-- Feature Images -->
+        <div class="feature-image relative group cursor-pointer" data-scroll="#engine" data-aos="zoom-in">
+            <img src="images/engines.jpg" alt="Engine" class="w-full h-full object-cover rounded-lg">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <span class="text-2xl font-bold text-white">Engine</span>
+            </div>
+        </div>
+
+        <div class="feature-image relative group cursor-pointer" data-scroll="#transmission" data-aos="zoom-in">
+            <img src="images/transmission.png" alt="Transmission" class="w-full h-full object-cover rounded-lg">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <span class="text-2xl font-bold text-white">Transmission</span>
+            </div>
+        </div>
+
+        <div class="feature-image relative group cursor-pointer" data-scroll="#fuel-efficiency" data-aos="zoom-in">
+            <img src="images/fuel-efficiency.avif" alt="Fuel and Efficiency" class="w-full h-full object-cover rounded-lg">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <span class="text-2xl font-bold text-white">Fuel and Efficiency</span>
+            </div>
+        </div>
+
+        <div class="feature-image relative group cursor-pointer" data-scroll="#frame-chassis" data-aos="zoom-in">
+            <img src="images/frame-chassis.avif" alt="Frame and Chassis" class="w-full h-full object-cover rounded-lg">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <span class="text-2xl font-bold text-white">Frame and Chassis</span>
+            </div>
+        </div>
+
+        <div class="feature-image relative group cursor-pointer" data-scroll="#suspension" data-aos="zoom-in">
+            <img src="images/suspension.webp" alt="Suspension" class="w-full h-full object-cover rounded-lg">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <span class="text-2xl font-bold text-white">Suspension</span>
+            </div>
+        </div>
+
+        <div class="feature-image relative group cursor-pointer" data-scroll="#brakes" data-aos="zoom-in">
+            <img src="images/brakes.webp" alt="Brakes" class="w-full h-full object-cover rounded-lg">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <span class="text-2xl font-bold text-white">Brakes</span>
+            </div>
+        </div>
+
+        <div class="feature-image relative group cursor-pointer" data-scroll="#tires" data-aos="zoom-in">
+            <img src="images/tires.webp" alt="Tires" class="w-full h-full object-cover rounded-lg">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <span class="text-2xl font-bold text-white">Tires</span>
+            </div>
+        </div>
+
+        <div class="feature-image relative group cursor-pointer" data-scroll="#performance" data-aos="zoom-in">
+            <img src="images/performance.jpg" alt="Performance" class="w-full h-full object-cover rounded-lg">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <span class="text-2xl font-bold text-white">Performance</span>
+            </div>
+        </div>
+
+        <div class="feature-image relative group cursor-pointer" data-scroll="#electronics" data-aos="zoom-in">
+            <img src="images/electronic-features.webp" alt="Electronics" class="w-full h-full object-cover rounded-lg">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <span class="text-2xl font-bold text-white">Electronics</span>
+            </div>
+        </div>
+
+        <div class="feature-image relative group cursor-pointer" data-scroll="#price" data-aos="zoom-in">
+            <img src="images/pricing.webp" alt="Price" class="w-full h-full object-cover rounded-lg">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <span class="text-2xl font-bold text-white">Price</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Specifications Section -->
+    <section id="specifications" class="py-16 px-8 space-y-16">
+        <!-- Engine -->
+        <div id="engine" class="spec-section" data-aos="fade-right">
+            <h3 class="text-2xl font-bold mb-4">1. Engine</h3>
+            <p>High-performance engines ranging from 300cc to over 1000cc, providing exceptional power and speed.</p>
+            <br>
+            <div class="section">
+                <h2>1. Engine Configuration</h2>
+                <ul>
+                    <li><strong>Inline-Four (I4):</strong> Known for balance and smoothness (e.g., Yamaha YZF-R1, Kawasaki Ninja ZX-10R).</li>
+                    <li><strong>V-Twin (V2):</strong> Strong mid-range torque (e.g., Ducati Panigale V2).</li>
+                    <li><strong>V4 Engines:</strong> Compact and powerful (e.g., Ducati Panigale V4, Honda RC213V-S).</li>
+                    <li><strong>Parallel Twin:</strong> Lightweight and compact, common in smaller superbikes.</li>
+                    <li><strong>Supercharged Engines:</strong> Extremely powerful (e.g., Kawasaki Ninja H2 series).</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>2. Displacement</h2>
+                <ul>
+                    <li><strong>Range:</strong> Typically 600cc to 1300cc.</li>
+                    <li><strong>Entry-level superbikes:</strong> 600-800cc.</li>
+                    <li><strong>Flagship superbikes:</strong> 1000cc+.</li>
+                    <li><strong>Hyperbikes:</strong> 1200cc-1400cc (e.g., Kawasaki Ninja ZX-14R).</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>3. Power Output</h2>
+                <ul>
+                    <li><strong>Horsepower (HP):</strong> 100 HP for entry-level, up to 220 HP for 1000cc superbikes, and over 300 HP for high-performance models.</li>
+                    <li><strong>Torque:</strong> Varies by engine configuration, with V-Twins offering higher torque at lower RPMs.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>4. Cooling System</h2>
+                <ul>
+                    <li><strong>Liquid Cooling:</strong> Used for consistent performance and heat management during high-speed runs.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>5. Valvetrain</h2>
+                <ul>
+                    <li><strong>DOHC:</strong> Dual Overhead Camshaft for precise valve timing.</li>
+                    <li><strong>Valve Count:</strong> 4 valves per cylinder for improved combustion efficiency.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>6. Fuel System</h2>
+                <ul>
+                    <li><strong>Fuel Injection:</strong> Ensures precise fuel delivery for better performance.</li>
+                    <li><strong>Throttle-by-Wire:</strong> Electronic throttle control for smoother power delivery.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>7. Performance Enhancements</h2>
+                <ul>
+                    <li><strong>Quickshifters:</strong> Clutchless gear shifts for faster acceleration.</li>
+                    <li><strong>Ride-by-Wire:</strong> Electronic throttle for precise engine response.</li>
+                    <li><strong>Variable Valve Timing (VVT):</strong> Optimizes performance across the RPM range.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>8. Compression Ratio</h2>
+                <ul>
+                    <li><strong>High Compression Ratios:</strong> Commonly 13:1 or more for enhanced combustion and power output.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>9. Exhaust System</h2>
+                <ul>
+                    <li><strong>Design:</strong> Lightweight and aerodynamic for optimal performance.</li>
+                    <li><strong>Materials:</strong> Titanium or carbon fiber for reduced weight.</li>
+                    <li><strong>Sound:</strong> Aggressive tone, compliant with noise regulations.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>10. Superbike Engine Innovations</h2>
+                <ul>
+                    <li><strong>Superchargers/Turbochargers:</strong> For extreme power boosts (e.g., Kawasaki Ninja H2).</li>
+                    <li><strong>Hybrid Technology:</strong> Combining electric motors with combustion engines.</li>
+                    <li><strong>MotoGP-Inspired Tech:</strong> Features like seamless gearboxes and pneumatic valves.</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Transmission -->
+        <div id="transmission" class="spec-section" data-aos="fade-left">
+            <h3 class="text-2xl font-bold mb-4">2. Transmission</h3>
+            <p>6-speed manual gearbox with wet multi-plate and slipper clutch for smooth and responsive gear changes.</p>
+            <br>
+            <section id="type">
+                <h2>1. Transmission Type</h2>
+                <ul>
+                    <li><strong>Manual Transmission</strong>: Most superbikes use a 6-speed manual gearbox for precise control over power delivery.</li>
+                    <li><strong>Clutchless Transmission</strong>: Race-inspired models feature quick-shift systems for clutchless gear changes.</li>
+                </ul>
+            </section>
+            <br>
+    
+            <section id="clutch-system">
+                <h2>2. Clutch System</h2>
+                <ul>
+                    <li><strong>Wet Multi-Plate Clutch</strong>: Provides durability and smooth operation under heavy loads.</li>
+                    <li><strong>Slipper Clutch</strong>: Prevents wheel lockup during aggressive downshifting, enhancing safety.</li>
+                    <li><strong>Hydraulic Clutch</strong>: Found in premium models, offering smoother lever feel compared to cable-operated systems.</li>
+                </ul>
+            </section>
+            <br>
+    
+            <section id="gear-ratios">
+                <h2>3. Gear Ratios</h2>
+                <ul>
+                    <li><strong>Close-Ratio Gearing</strong>: Optimized for acceleration and high-speed performance.</li>
+                    <li><strong>Customizable Ratios</strong>: Adjustable sprockets and chains for tailored performance.</li>
+                </ul>
+            </section>
+            <br>
+    
+            <section id="quickshifters">
+                <h2>4. Quickshifters</h2>
+                <ul>
+                    <li><strong>Up Quickshifter</strong>: Allows clutchless upshifts by momentarily cutting engine power.</li>
+                    <li><strong>Down Quickshifter</strong>: Enables clutchless downshifts with electronic throttle blipping.</li>
+                </ul>
+            </section>
+            <br>
+    
+            <section id="gear-indicator">
+                <h2>5. Gear Indicator</h2>
+                <p>Most modern superbikes include a gear indicator on the digital display for easy reference during riding.</p>
+            </section>
+            <br>
+    
+            <section id="cooling">
+                <h2>6. Transmission Cooling</h2>
+                <p>Efficient lubrication systems ensure heat dissipation and consistent performance during aggressive riding.</p>
+            </section>
+            <br>
+    
+            <section id="final-drive">
+                <h2>7. Final Drive System</h2>
+                <ul>
+                    <li><strong>Chain Drive</strong>: Common in superbikes for its lightweight nature and ease of maintenance.</li>
+                    <li><strong>Belt Drive</strong>: Rare in superbikes but offers quieter operation.</li>
+                    <li><strong>Shaft Drive</strong>: Found in sport-touring bikes, prioritizing reliability and low maintenance.</li>
+                </ul>
+            </section>
+            <br>
+    
+            <section id="racing-features">
+                <h2>8. Racing Features</h2>
+                <ul>
+                    <li><strong>Seamless Gearbox</strong>: Eliminates interruptions during gear shifts for racing efficiency.</li>
+                    <li><strong>Launch Control</strong>: Optimizes power delivery for quick starts.</li>
+                    <li><strong>Auto-Blip Systems</strong>: Automatically rev-matches during downshifts for smooth transitions.</li>
+                </ul>
+            </section>
+            <br>
+    
+            <section id="reverse-gear">
+                <h2>9. Reverse Gear</h2>
+                <p>Rare in superbikes, reverse gears are more common in heavyweight touring motorcycles.</p>
+            </section>
+            <br>
+            <section id="maintenance">
+                <h2>10. Maintenance Aspects</h2>
+                <ul>
+                    <li>Regular chain tension checks are necessary for optimal performance.</li>
+                    <li>Specialized gearbox oil is used to reduce friction and improve cooling.</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Fuel and Efficiency -->
+        <div id="fuel-efficiency" class="spec-section" data-aos="fade-right">
+            <h3 class="text-2xl font-bold mb-4">3. Fuel and Efficiency</h3>
+            <p>Fuel-efficient design with a tank capacity of 12-17 liters, offering 15-25 km/l based on the riding style.</p>
+            <br>
+            <div class="section">
+                <h2>1. Fuel Tank Capacity</h2>
+                <ul>
+                    <li><strong>Range:</strong> Typically ranges from 12 to 17 liters, depending on the model.</li>
+                    <li><strong>Superbikes:</strong> Higher-end models often have smaller tank capacities for reduced weight, while still offering adequate range for road and track use.</li>
+                    <li><strong>Hyperbikes:</strong> Some high-performance bikes (e.g., Kawasaki Ninja H2) may have slightly larger tanks for more range.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>2. Fuel Efficiency</h2>
+                <ul>
+                    <li><strong>Entry-Level Superbike:</strong> Fuel consumption can range from 15-25 km/l, depending on riding style and model.</li>
+                    <li><strong>Mid-Range Superbike:</strong> Typically achieves around 10-18 km/l under mixed riding conditions.</li>
+                    <li><strong>High-Performance Superbikes:</strong> May offer around 8-14 km/l, as their focus is more on power than efficiency.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>3. Range per Full Tank</h2>
+                <ul>
+                    <li><strong>Standard Bikes:</strong> With a full tank of fuel, most bikes can cover between 180-300 km, depending on fuel tank size and efficiency.</li>
+                    <li><strong>High-Performance Models:</strong> These bikes generally have a shorter range, often between 150-200 km due to their smaller tanks and higher fuel consumption rates.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>4. Fuel System</h2>
+                <ul>
+                    <li><strong>Fuel Injection:</strong> Modern superbikes are equipped with electronic fuel injection (EFI) systems for better fuel efficiency and smoother power delivery.</li>
+                    <li><strong>Throttle-by-Wire:</strong> This system allows for more precise fuel delivery, contributing to improved efficiency and responsiveness.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>5. Emissions</h2>
+                <ul>
+                    <li><strong>Euro 4 and Euro 5 Compliant:</strong> Many newer superbikes meet strict emissions standards, leading to cleaner engine operation and better fuel efficiency.</li>
+                    <li><strong>Fueling Technology:</strong> Technologies like variable valve timing (VVT) help reduce emissions and improve fuel economy.</li>
+                </ul>
+            </div>
+            <br>
+            
+        </div>
+
+        <!-- Frame and Chassis -->
+        <div id="frame-chassis" class="spec-section" data-aos="fade-left">
+            <h3 class="text-2xl font-bold mb-4">4. Frame and Chassis</h3>
+            <p>Lightweight aluminum or carbon fiber frames ensure agility and precise handling at high speeds.</p>
+            <br>
+            <div class="section">
+                <h2>1. Frame Material</h2>
+                <ul>
+                    <li><strong>Aluminum:</strong> Lightweight and strong, offering a good balance between weight and rigidity (e.g., Yamaha YZF-R1, Honda CBR1000RR).</li>
+                    <li><strong>Carbon Fiber:</strong> Ultra-lightweight and extremely rigid, used in high-performance and premium models (e.g., Ducati Panigale V4).</li>
+                    <li><strong>Steel Trellis:</strong> Offers high strength and rigidity, commonly used in Ducati and Aprilia superbikes for improved handling (e.g., Ducati Monster).</li>
+                    <li><strong>Chromoly Steel:</strong> Offers a balance between strength and weight, used in some superbikes for enhanced durability and performance.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>2. Weight</h2>
+                <ul>
+                    <li><strong>Lightweight Designs:</strong> Superbikes typically weigh between 150 to 220 kg (curb weight), with some lightweight models tipping the scales at around 170 kg.</li>
+                    <li><strong>High-Performance Bikes:</strong> High-performance bikes like the Kawasaki Ninja H2R and Ducati Panigale V4 focus on reducing weight for better agility and handling.</li>
+                    <li><strong>Race-Ready Models:</strong> Carbon fiber and aluminum frame constructions help reduce weight, offering better track performance.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>3. Wheelbase</h2>
+                <ul>
+                    <li><strong>Shorter Wheelbase (~1400mm-1450mm):</strong> Offers sharper handling, allowing for better cornering and quick changes in direction (common in sportier models like Yamaha YZF-R1).</li>
+                    <li><strong>Longer Wheelbase (~1450mm-1500mm):</strong> Improves stability at high speeds and is often found on touring or more stable handling bikes like the BMW S1000RR.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>4. Chassis Design</h2>
+                <ul>
+                    <li><strong>Single-Sided Swingarm:</strong> Often used for aesthetic purposes and improved accessibility for wheel changes (e.g., Ducati Panigale V4).</li>
+                    <li><strong>Double-Sided Swingarm:</strong> Standard design for greater strength and rigidity, providing more stability at high speeds (e.g., Yamaha YZF-R1, Kawasaki ZX-10R).</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>5. Adjustable Geometry</h2>
+                <ul>
+                    <li><strong>Adjustable Steering Head Angle:</strong> Allows for better handling by modifying the rake and trail, often seen in race-oriented models.</li>
+                    <li><strong>Adjustable Ride Height:</strong> Provides the ability to modify the bike's center of gravity for different riding styles and track conditions.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>6. Rigid vs. Flexible Frame</h2>
+                <ul>
+                    <li><strong>Rigid Frames:</strong> Provide maximum performance and responsiveness, commonly found in racing motorcycles where precision handling is crucial.</li>
+                    <li><strong>Flexible Frames:</strong> Offer improved comfort and stability, reducing rider fatigue on long rides and better performance in real-world conditions.</li>
+                </ul>
+            </div>
+            <br>
+            
+        </div>
+
+        <!-- Suspension -->
+        <div id="suspension" class="spec-section" data-aos="fade-right">
+            <h3 class="text-2xl font-bold mb-4">5. Suspension</h3>
+            <p>Inverted telescopic forks and adjustable monoshock for optimal ride quality on different terrains.</p>
+            <br>
+            <div class="section">
+                <h2>1. Front Suspension</h2>
+                <ul>
+                    <li><strong>Inverted Telescopic Forks (USD Forks):</strong> Often used in high-performance superbikes, providing better rigidity and improved handling (e.g., Yamaha YZF-R1, Honda CBR1000RR).</li>
+                    <li><strong>Conventional Telescopic Forks:</strong> Standard suspension used in entry-level and mid-range bikes, providing a balance between comfort and handling (e.g., Kawasaki Ninja ZX-6R).</li>
+                    <li><strong>Fully Adjustable Forks:</strong> Premium models come with fully adjustable forks (compression, rebound, and preload) to fine-tune the suspension based on rider preferences and track conditions (e.g., Ducati Panigale V4).</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>2. Rear Suspension</h2>
+                <ul>
+                    <li><strong>Monoshock:</strong> A single rear shock absorber that connects to the frame and rear swingarm, commonly used in superbikes for superior handling and weight reduction (e.g., Kawasaki ZX-10R, BMW S1000RR).</li>
+                    <li><strong>Dual Shock Absorbers:</strong> Found in some older or budget bikes, providing good comfort and stability, but not as precise as a monoshock setup.</li>
+                    <li><strong>Fully Adjustable Rear Shock:</strong> High-end bikes feature rear suspension that can be adjusted for preload, compression, and rebound damping to allow personalized tuning for various riding conditions.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>3. Suspension Travel</h2>
+                <ul>
+                    <li><strong>Front Suspension Travel:</strong> Typically ranges from 100mm to 120mm in high-performance superbikes for better control during aggressive riding and cornering.</li>
+                    <li><strong>Rear Suspension Travel:</strong> Typically between 120mm to 135mm, offering a balance between comfort and stability at higher speeds.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>4. Adjustability</h2>
+                <ul>
+                    <li><strong>Preload Adjustment:</strong> Allows the rider to adjust the amount of sag in the suspension, crucial for tuning based on rider weight and riding conditions.</li>
+                    <li><strong>Compression Damping:</strong> Controls how quickly the suspension compresses when hitting bumps, offering a smoother or firmer ride based on settings.</li>
+                    <li><strong>Rebound Damping:</strong> Controls how quickly the suspension returns to its normal position after compressing, preventing the bike from bouncing excessively after a bump.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>5. Suspension Materials</h2>
+                <ul>
+                    <li><strong>Aluminum Forks:</strong> Lightweight material used in high-end superbike suspension forks for improved handling and rigidity (e.g., Kawasaki Ninja H2).</li>
+                    <li><strong>Carbon Fiber:</strong> Lightweight and highly rigid, carbon fiber is used in premium bikes for suspension components to reduce weight without compromising performance.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>6. Suspension Technology</h2>
+                <ul>
+                    <li><strong>Electronic Suspension Adjustment (ESA):</strong> Advanced systems that automatically adjust the suspension settings based on road conditions or riding modes (e.g., BMW S1000RR with Dynamic ESA).</li>
+                    <li><strong>Ohlins Suspension:</strong> A renowned suspension brand known for premium, race-focused components that offer exceptional adjustability and performance.</li>
+                    <li><strong>Showa and KYB:</strong> Other leading brands that provide high-quality suspension components used in many superbikes for precision handling and comfort.</li>
+                </ul>
+            </div>
+            <br>
+            
+        </div>
+
+        <!-- Brakes -->
+        <div id="brakes" class="spec-section" data-aos="fade-left">
+            <h3 class="text-2xl font-bold mb-4">6. Brakes</h3>
+            <p>Dual-disc front brakes with ABS and single-disc rear brakes for superior stopping power.</p>
+            <br>
+            <div class="section">
+                <h2>1. Front Brakes</h2>
+                <ul>
+                    <li><strong>Dual Disc Setup:</strong> Most superbikes use dual front discs (e.g., 320mm or 330mm) for superior braking power and heat dissipation (e.g., Yamaha YZF-R1, Ducati Panigale V4).</li>
+                    <li><strong>Radial-Mounted Calipers:</strong> These calipers are mounted directly to the fork to improve braking performance and rigidity, providing more precise braking feel (e.g., Kawasaki Ninja ZX-10R).</li>
+                    <li><strong>Disc Material:</strong> High-performance discs often use materials like stainless steel or carbon composite for better heat resistance and reduced fade (e.g., Brembo discs).</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>2. Rear Brakes</h2>
+                <ul>
+                    <li><strong>Single Disc Setup:</strong> The rear brake typically uses a single 220mm to 250mm disc to provide stability and assist with braking balance (e.g., BMW S1000RR, Suzuki GSX-R1000).</li>
+                    <li><strong>Rear Calipers:</strong> High-performance rear calipers often feature a monoblock design, which helps to reduce flex and improve braking power.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>3. Brake Technology</h2>
+                <ul>
+                    <li><strong>Anti-lock Braking System (ABS):</strong> Most modern superbikes are equipped with ABS to prevent wheel lockup during hard braking, enhancing rider safety (e.g., Honda CBR1000RR, Kawasaki Ninja H2).</li>
+                    <li><strong>Cornering ABS:</strong> An advanced version of ABS that takes lean angle into account, adjusting braking force to maintain stability during cornering (e.g., Ducati Panigale V4, BMW S1000RR).</li>
+                    <li><strong>Combined Braking System (CBS):</strong> This system applies a portion of the rear brake force when the front brake is used, improving stability and control (e.g., Honda CBR650R).</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>4. Brake Pads and Materials</h2>
+                <ul>
+                    <li><strong>Carbon-Carbon Pads:</strong> High-performance brake pads made from carbon composite materials that provide excellent heat resistance and stopping power in high-speed conditions.</li>
+                    <li><strong>Organic Pads:</strong> These are made from natural materials and offer quieter performance with good initial bite, suitable for street-oriented bikes.</li>
+                    <li><strong>Sintered Pads:</strong> Made from metal particles fused together, sintered pads provide excellent durability and stopping power, commonly found in superbikes.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>5. Brake Fluid</h2>
+                <ul>
+                    <li><strong>Mineral Oil:</strong> Used in some motorcycles, providing smooth performance, but not as heat resistant as synthetic fluids.</li>
+                    <li><strong>DOT Brake Fluid:</strong> A common fluid used in superbikes, offering better high-temperature performance and superior braking under extreme conditions (e.g., DOT 4, DOT 5.1).</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>6. Brake Levers and Adjustability</h2>
+                <ul>
+                    <li><strong>Adjustable Brake Levers:</strong> Many premium superbikes feature adjustable levers for better ergonomics, allowing riders to fine-tune the lever position for comfort (e.g., Kawasaki Ninja ZX-10R).</li>
+                    <li><strong>Race-Style Levers:</strong> Some high-performance models come with race-style levers that are more responsive and easier to modulate during aggressive riding (e.g., Yamaha R1).</li>
+                </ul>
+            </div>
+            <br>
+            
+        </div>
+
+        <!-- Tires -->
+        <div id="tires" class="spec-section" data-aos="fade-right">
+            <h3 class="text-2xl font-bold mb-4">7. Tires</h3>
+            <p>Wider rear radial tires for grip and narrower front tires for agility, ideal for high-performance riding.</p>
+            <br>
+            <div class="section">
+                <h2>1. Tire Types</h2>
+                <ul>
+                    <li><strong>Radial Tires:</strong> Most superbikes use radial tires for better performance and handling. These tires have a casing where the cord layers are positioned radially from the center of the tire (e.g., Michelin Pilot Power 2CT, Pirelli Diablo Supercorsa).</li>
+                    <li><strong>Bias Ply Tires:</strong> These are typically found on older bikes or entry-level models, offering durability but not the same level of performance as radial tires.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>2. Tire Sizes</h2>
+                <ul>
+                    <li><strong>Front Tires:</strong> Typically range from 120mm to 190mm in width, with common sizes being 120/70 ZR17 (e.g., Yamaha YZF-R1, Ducati Panigale V4).</li>
+                    <li><strong>Rear Tires:</strong> Larger rear tires, often ranging from 180mm to 200mm in width, with common sizes being 190/55 ZR17 or 200/55 ZR17 (e.g., Kawasaki Ninja ZX-10R, BMW S1000RR).</li>
+                    <li><strong>Superbike Tires:</strong> High-performance tires used in superbikes often have special compounds for enhanced grip, like the Pirelli Diablo Superbike, Bridgestone Battlax Racing, or Michelin Power Cup.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>3. Tire Compound</h2>
+                <ul>
+                    <li><strong>Soft Compound:</strong> Offers maximum grip, ideal for track use or aggressive street riding. These tires wear out quickly but provide superior cornering and braking performance (e.g., Pirelli Diablo Supercorsa SP).</li>
+                    <li><strong>Medium Compound:</strong> A compromise between grip and longevity, providing a balance of performance for both street and track use (e.g., Bridgestone Battlax Hypersport S22).</li>
+                    <li><strong>Hard Compound:</strong> Prioritized for durability and long-distance riding. Not as grippy as softer compounds but offers better longevity for street-oriented superbikes (e.g., Michelin Pilot Road 5).</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>4. Tire Pressure</h2>
+                <ul>
+                    <li><strong>Front Tire Pressure:</strong> Typically between 32 to 36 PSI (depending on the bike and tire brand).</li>
+                    <li><strong>Rear Tire Pressure:</strong> Typically between 36 to 42 PSI for superbikes, with adjustments made depending on load and track conditions.</li>
+                    <li><strong>Importance:</strong> Proper tire pressure is essential for optimal grip, handling, and tire longevity. Incorrect tire pressure can affect the bike’s performance and safety.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>5. Tire Tread</h2>
+                <ul>
+                    <li><strong>Track Tires:</strong> Often have a slick, smooth surface with minimal tread to maximize grip on dry track surfaces (e.g., Dunlop D212 GP Pro).</li>
+                    <li><strong>Street Tires:</strong> Designed with more tread grooves to provide better water dispersal and grip in wet conditions (e.g., Michelin Power RS, Pirelli Diablo Rosso III).</li>
+                    <li><strong>Mixed Use Tires:</strong> Offer a combination of road and track capabilities, with a balanced tread design for various riding conditions (e.g., Bridgestone Battlax S22, Pirelli Diablo Rosso Corsa).</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>6. Tire Brands</h2>
+                <ul>
+                    <li><strong>Pirelli:</strong> Known for its high-performance tires, especially the Pirelli Diablo series, designed for superbike-level grip and performance.</li>
+                    <li><strong>Michelin:</strong> Offers a wide range of tires, including the Michelin Power series, which is known for superb handling and grip on the road and track.</li>
+                    <li><strong>Bridgestone:</strong> Famous for their Battlax series, providing durable and high-performance tires for superbikes, including both road and track-focused options.</li>
+                    <li><strong>Dunlop:</strong> Known for its GP Pro series, Dunlop offers slick tires and high-performance options for racing and street use.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>7. Tire Maintenance</h2>
+                <ul>
+                    <li><strong>Regular Inspections:</strong> It’s important to regularly inspect tires for signs of wear, damage, or uneven tread wear, as these can affect performance and safety.</li>
+                    <li><strong>Rotation:</strong> Rotating tires (if applicable) to ensure even wear can help extend tire life and improve performance.</li>
+                    <li><strong>Cleaning:</strong> Keeping tires clean from dirt and debris, especially after track days, helps maintain the tire surface and ensures optimal performance.</li>
+                </ul>
+            </div>
+            <br>
+            
+        </div>
+
+        <!-- Performance -->
+        <div id="performance" class="spec-section" data-aos="fade-left">
+            <h3 class="text-2xl font-bold mb-4">8. Performance</h3>
+            <p>Capable of reaching 0-100 km/h in under 3 seconds, with top speeds exceeding 300 km/h.</p>
+            <br>
+            <div class="section">
+                <h2>1. Top Speed</h2>
+                <ul>
+                    <li><strong>Entry-Level Sports Bikes:</strong> Typically reach top speeds of around 160-200 km/h (e.g., Yamaha YZF-R3, Kawasaki Ninja 400).</li>
+                    <li><strong>Mid-Range Sports Bikes:</strong> Top speeds range from 200-250 km/h (e.g., Kawasaki Ninja ZX-6R, Suzuki GSX-R750).</li>
+                    <li><strong>Superbikes:</strong> Often exceed 300 km/h (e.g., Ducati Panigale V4, Yamaha YZF-R1, Kawasaki Ninja H2R).</li>
+                    <li><strong>Hyperbikes:</strong> The highest-performance motorcycles can exceed 350 km/h (e.g., Bugatti Veyron-inspired motorcycles, rare custom superbikes).</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>2. Acceleration</h2>
+                <ul>
+                    <li><strong>0-100 km/h:</strong> Most superbikes can achieve this in under 3 seconds, with the fastest models like the Kawasaki Ninja H2R hitting 2.5 seconds.</li>
+                    <li><strong>Power-to-Weight Ratio:</strong> Superbikes have a very high power-to-weight ratio, meaning they can accelerate rapidly, especially in lower gears.</li>
+                    <li><strong>Launch Control:</strong> Many modern superbikes are equipped with launch control systems to optimize acceleration during racing or aggressive starts.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>3. Torque</h2>
+                <ul>
+                    <li><strong>V-Twin Engines:</strong> Known for producing higher torque at lower RPMs, offering strong low-end power (e.g., Ducati Panigale V2, Aprilia RSV4).</li>
+                    <li><strong>Inline-Four Engines:</strong> Produce power more evenly across the RPM range but with slightly less low-end torque (e.g., Yamaha YZF-R1, Suzuki GSX-R1000).</li>
+                    <li><strong>Supercharged Engines:</strong> Deliver massive torque and power, especially at higher RPMs, resulting in exhilarating acceleration (e.g., Kawasaki Ninja H2, H2R).</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>4. Handling</h2>
+                <ul>
+                    <li><strong>Lightweight Design:</strong> The lighter the bike, the quicker it responds to rider inputs, which is essential for tight cornering and quick maneuvering.</li>
+                    <li><strong>Suspension Setup:</strong> Superbikes typically come with adjustable suspension components to fine-tune handling for different tracks or roads (e.g., fully adjustable forks and shock absorbers).</li>
+                    <li><strong>Chassis Geometry:</strong> A shorter wheelbase and aggressive rake angles on superbikes help them handle sharp corners and tight turns efficiently.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>5. Braking Performance</h2>
+                <ul>
+                    <li><strong>High-Performance Brake Systems:</strong> Brembo or similar high-performance calipers are used in superbikes, offering exceptional stopping power, especially at high speeds.</li>
+                    <li><strong>Carbon-Carbon Brakes:</strong> In hyperbikes, carbon-carbon brake systems are often employed for their lightweight properties and superior performance under high heat (e.g., Ducati Panigale V4).</li>
+                    <li><strong>Anti-lock Braking Systems (ABS):</strong> Modern superbikes are equipped with cornering ABS, which helps prevent wheel lock-up and provides better control during aggressive braking.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>6. Aerodynamics</h2>
+                <ul>
+                    <li><strong>Wind Tunnel Testing:</strong> Most modern superbikes undergo wind tunnel testing to ensure their aerodynamics are optimized for high-speed stability and reduced drag.</li>
+                    <li><strong>Bodywork:</strong> Lightweight fairings, integrated air ducts, and aggressive bodywork help superbikes cut through the air more efficiently.</li>
+                    <li><strong>Downforce:</strong> Advanced aerodynamics in hyperbikes or track-ready superbikes provide additional downforce, increasing stability at high speeds and through corners (e.g., Ducati Panigale V4).</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>7. Electronics and Performance Aids</h2>
+                <ul>
+                    <li><strong>Traction Control:</strong> Adjustable traction control settings allow riders to manage power delivery and prevent excessive wheel spin during acceleration (e.g., Yamaha YZF-R1).</li>
+                    <li><strong>Power Modes:</strong> Riding modes such as Sport, Track, and Rain adjust throttle response, power delivery, and electronic settings for various riding conditions.</li>
+                    <li><strong>Quickshifter:</strong> Many superbikes are equipped with a quickshifter, which allows for clutchless gear shifts, providing faster acceleration and smoother gear transitions.</li>
+                    <li><strong>Launch Control:</strong> A system designed for optimal acceleration from a standstill, helping to prevent wheel spin and maximize speed during a launch.</li>
+                </ul>
+            </div>
+            <br>
+            
+        </div>
+
+        <!-- Electronics -->
+        <div id="electronics" class="spec-section" data-aos="fade-right">
+            <h3 class="text-2xl font-bold mb-4">9. Electronics and Features</h3>
+            <p>Advanced electronics like traction control, quick shifters, and riding modes for enhanced usability.</p>
+            <br>
+            <div class="section">
+                <h2>1. Riding Modes</h2>
+                <ul>
+                    <li><strong>Sport Mode:</strong> Provides the most aggressive power delivery, optimized for track and high-performance riding.</li>
+                    <li><strong>Track Mode:</strong> Typically used for racing, offering sharp throttle response and minimal electronic intervention for maximum performance.</li>
+                    <li><strong>Rain Mode:</strong> Reduces power and provides more traction control to ensure safer riding in wet conditions.</li>
+                    <li><strong>Custom Mode:</strong> Allows the rider to personalize power delivery, traction control, and other settings for their preference or track conditions.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>2. Traction Control</h2>
+                <ul>
+                    <li><strong>Adjustable Traction Control:</strong> Riders can adjust the level of traction control to suit different riding styles and conditions (e.g., Yamaha YZF-R1, Ducati Panigale V4).</li>
+                    <li><strong>Cornering ABS:</strong> Advanced traction control systems that help manage wheel slip and improve stability, especially during cornering and aggressive throttle application.</li>
+                    <li><strong>Wheelie Control:</strong> Some superbikes come with a wheelie control feature, which helps prevent the front wheel from lifting off the ground under hard acceleration.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>3. Quickshifter</h2>
+                <ul>
+                    <li><strong>Seamless Gear Shifting:</strong> Allows for clutchless upshifts and downshifts, improving acceleration and making gear transitions smoother during aggressive riding.</li>
+                    <li><strong>Race-Inspired Technology:</strong> Often found in high-end superbikes, quickshifters allow for faster gear changes, especially on the track, reducing lap times and rider fatigue.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>4. Launch Control</h2>
+                <ul>
+                    <li><strong>Optimized Launch:</strong> Helps the rider achieve the fastest start by controlling throttle and power delivery, especially in drag racing or track racing conditions.</li>
+                    <li><strong>Electronic Systems:</strong> Launch control is typically controlled by an onboard ECU, which adjusts the throttle input for maximum acceleration off the line.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>5. Display and Connectivity</h2>
+                <ul>
+                    <li><strong>Full-Color TFT Displays:</strong> Most superbikes come with high-resolution TFT screens that show vital information such as speed, engine temperature, and RPM, often with customizable layouts.</li>
+                    <li><strong>Bluetooth and GPS:</strong> Some bikes come with Bluetooth connectivity for phone integration, navigation, and call control, as well as GPS features for route tracking and performance monitoring.</li>
+                    <li><strong>Data Logging:</strong> Advanced models allow data logging for performance metrics, track times, lap times, and other relevant racing data.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>6. LED Lighting</h2>
+                <ul>
+                    <li><strong>LED Headlights:</strong> Provide brighter, more energy-efficient lighting compared to traditional halogen bulbs. Many superbikes have twin LED headlights for a sleek and aggressive look.</li>
+                    <li><strong>LED Taillights:</strong> More energy-efficient and offer better visibility, with some models incorporating dynamic lighting patterns for improved safety and aesthetics.</li>
+                    <li><strong>Daytime Running Lights (DRLs):</strong> Enhances visibility during the day, contributing to safer riding and giving the bike a modern appearance.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>7. Anti-Lock Braking System (ABS)</h2>
+                <ul>
+                    <li><strong>Cornering ABS:</strong> A more advanced version of traditional ABS, this system adjusts braking force during cornering to prevent the wheels from locking up, ensuring better control under hard braking.</li>
+                    <li><strong>Electronic Braking Aids:</strong> Some superbikes feature electronic aids that help adjust brake pressure and prevent lock-ups even when aggressive braking forces are applied.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>8. Hill Start Control</h2>
+                <ul>
+                    <li><strong>Prevents Roll-Back:</strong> This system holds the bike in place momentarily when starting on an incline, making it easier for the rider to manage throttle input and clutch release without rolling backward.</li>
+                    <li><strong>Electronic Assistance:</strong> Typically controlled via the bike's onboard electronics, this feature offers an additional layer of convenience for riders in hilly terrain.</li>
+                </ul>
+            </div>
+            <br>
+            
+        </div>
+
+        <!-- Price -->
+        <div id="price" class="spec-section" data-aos="fade-left">
+            <h3 class="text-2xl font-bold mb-4">10. Price Range</h3>
+            <p>From $5,000 for entry-level sports bikes to over $100,000 for high-end superbikes.</p>
+            <br>
+            <div class="section">
+                <h2>1. Entry-Level Sports Bikes</h2>
+                <ul>
+                    <li><strong>Price Range:</strong> $5,000 - $10,000</li>
+                    <li><strong>Examples:</strong> Yamaha R3, KTM RC 390, Honda CBR500R, Kawasaki Ninja 400.</li>
+                    <li><strong>Engine Displacement:</strong> 300cc - 500cc</li>
+                    <li><strong>Target Audience:</strong> Riders looking for an affordable, beginner-friendly motorcycle with solid performance.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>2. Mid-Range Sports Bikes</h2>
+                <ul>
+                    <li><strong>Price Range:</strong> $10,000 - $20,000</li>
+                    <li><strong>Examples:</strong> Yamaha YZF-R6, Kawasaki Ninja ZX-6R, Suzuki GSX-R750, Honda CBR650R.</li>
+                    <li><strong>Engine Displacement:</strong> 600cc - 750cc</li>
+                    <li><strong>Target Audience:</strong> Riders who want a more powerful sports bike with enhanced features, suitable for track days and spirited riding.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>3. High-Performance Superbikes</h2>
+                <ul>
+                    <li><strong>Price Range:</strong> $20,000 - $50,000+</li>
+                    <li><strong>Examples:</strong> Yamaha YZF-R1, Ducati Panigale V4, Kawasaki Ninja ZX-10R, BMW S1000RR.</li>
+                    <li><strong>Engine Displacement:</strong> 1000cc+</li>
+                    <li><strong>Target Audience:</strong> Experienced riders seeking top-tier performance, cutting-edge technology, and track-ready bikes.</li>
+                </ul>
+            </div>
+            <br>
+            <div class="section">
+                <h2>4. Hyperbikes (Top-Tier Models)</h2>
+                <ul>
+                    <li><strong>Price Range:</strong> $50,000 - $100,000+</li>
+                    <li><strong>Examples:</strong> Ducati Superleggera V4, Kawasaki Ninja H2R, BMW HP4 Race, MV Agusta F4 RC.</li>
+                    <li><strong>Engine Displacement:</strong> 1000cc - 1400cc+</li>
+                    <li><strong>Target Audience:</strong> Elite riders and collectors who demand the highest levels of performance, exclusive designs, and advanced engineering.</li>
+                </ul>
+            </div>
+            <br>
+            
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="py-6 text-center bg-gray-800 text-white">
+        <p>&copy; 2024 Specifications Page. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="feature.js"></script>
+</body>
+</html>
